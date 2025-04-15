@@ -1,0 +1,679 @@
+:root {
+    --primary-color: #ff4500;
+    --background-dark: #1a1a1a;
+    --text-color: #ffffff;
+    --animation_eka: #4B0082;
+    --price-specs: rgb(234, 217, 217);
+    --hover-button:#006A70;
+    /*Storage section colours*/
+    --storage-background: #1E2A3A;
+    --storage-card-background: #192132;
+    --storage-primary-color: #8a2be2;
+    --storage-secondary-color: #00ffff;
+    --hover-overlay: rgba(0, 0, 0, 0.5);
+    --card-background: rgba(255, 255, 255, 0.05);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #1E2A3A;
+    color: var(--text-color);
+}
+
+/* Parts Sections Styles */
+.parts-container {
+    max-width: 1400px;
+    margin: 120px auto 200px;
+    padding: 0 20px;
+}
+
+.parts-section {
+    margin-bottom: 40px;
+}
+
+.parts-section h2 {
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.parts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    row-gap: 30px; /* Added explicit row gap to ensure spacing between rows */
+}
+
+/* Part Card Styles - Consolidated */
+.part-card {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+    background: var(--card-background);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.5);
+    padding: 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 10px; /* Added bottom margin as fallback for older browsers */
+}
+
+.part-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.6);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.part-card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    margin: 0;
+}
+
+.part-card:hover .part-card-image {
+    transform: scale(1.1);
+    filter: brightness(0.2) blur(3px);
+}
+
+.part-card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease, background 0.3s ease;
+}
+
+.part-card:hover .part-card-overlay {
+    opacity: 1;
+    background: var(--hover-overlay);
+}
+
+.part-details-container {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.part-details {
+    flex-grow: 1;
+}
+
+.part-name {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.part-specs {
+    font-size: 0.9rem;
+    color: var(--price-specs);
+}
+
+.part-price {
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 10px;
+}
+
+.add-to-cart, .buy-now {
+    flex: 1;
+    margin: 0 5px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover, .buy-now:hover {
+    background-color: var(--hover-button);
+}
+
+/* Column-specific styles */
+.parts-grid > .part-card:nth-child(3n + 1) { /* First column */
+    box-shadow: 0 20px 20px rgba(109, 109, 232, 0.601);
+}
+
+.parts-grid > .part-card:nth-child(3n + 2) { /* Second column */
+    box-shadow: 0 20px 20px rgba(161, 246, 161, 0.645);
+}
+
+.parts-grid > .part-card:nth-child(3n) { /* Third column */
+    box-shadow: 0 20px 20px rgb(115, 115, 115);
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .parts-container {
+        margin: 60px auto 0;
+        padding: 0 10px;
+        padding-top: 30px;
+    }
+
+    .parts-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        row-gap: 25px; /* Slightly smaller row gap on mobile but still maintains separation */
+    }
+
+    .part-card {
+        height: 250px;
+        margin-bottom: 10px; /* Consistent margin on mobile */
+    }
+
+    .part-name {
+        font-size: 1rem;
+    }
+
+    .part-specs {
+        font-size: 0.8rem;
+    }
+
+    .part-card-overlay {
+        padding: 10px;
+    }
+
+    .part-details-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .add-to-cart {
+        margin-top: 10px;
+        padding: 8px 15px;
+    }
+}
+
+/* Ultra-small screens (phones) */
+@media screen and (max-width: 480px) {
+    .parts-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        row-gap: 20px; /* Still maintain gap on smallest screens */
+    }
+
+    .part-card {
+        height: 200px;
+    }
+}
+
+/* Graphics Card Section */
+.graphics-container {
+    background-color: #2A3F52;
+    padding: 60px 0 30px;
+}
+
+.graphics-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.graphics-section h2 {
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.graphics-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.graphics-card {
+    position: relative;
+    width: 300px;
+    height: 375px;
+    transform-style: preserve-3d;
+    margin-bottom: 30px; /* Added margin bottom for fallback spacing */
+}
+
+.graphics-card-inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.graphics-card:hover .graphics-card-inner {
+    transform: rotateY(180deg);
+}
+
+.graphics-card-front,
+.graphics-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgb(0, 0, 0);
+}
+
+.graphics-card-front {
+    background: linear-gradient(45deg, #43b7f5, #2c2c2c);
+    overflow: hidden;
+}
+
+.graphics-card-front img {
+    max-width: 95%;
+    max-height: 80%;
+    object-fit: fill;
+    transition: transform 0.3s ease;
+}
+
+.graphics-card:hover .graphics-card-front img {
+    transform: scale(1.1);
+}
+
+.graphics-card-back {
+    background: linear-gradient(135deg, #008080, #4B0082);
+    transform: rotateY(180deg);
+    padding: 20px;
+    text-align: center;
+}
+
+.graphics-card-name {
+    padding-top: 40px;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--price-specs);
+}
+
+.graphics-card-specs {
+    font-size: 0.9rem;
+    color: var(--price-specs);
+    margin-bottom: 5px;
+}
+
+.graphics-card-price {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--price-specs);
+    margin-bottom: 20px;
+}
+
+/* Simplified button style without duplication */
+.graphics-card-buy {
+    background-color: var(--primary-color);
+    color: var(--price-specs);
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.graphics-card-buy:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+@media (max-width: 1024px) {
+    .graphics-layout {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+/*-------------------------------------------- Storage section from here ------------------------------------------------------ */
+
+/* General Styles for Storage Section */
+.storage-container {
+    background-color: var(--storage-background);
+    padding: 30px 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.storage-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 10px;
+    width: 100%;
+}
+
+.storage-section h2 {
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 70px;
+    margin-bottom: 20px;
+}
+
+.storage-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Storage Item Styles */
+.storage-item {
+    position: relative;
+    width: calc(33.333% - 20px);
+    max-width: 280px;
+    height: 400px;
+    background-color: var(--storage-card-background);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+.storage-item-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.storage-item-front,
+.storage-item-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.storage-item-front {
+    background-color: var(--storage-card-background);
+    text-align: center;
+}
+
+.storage-item-back {
+    background: linear-gradient(135deg, #4B0082, #008080);
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+.storage-image {
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.storage-name {
+    color: var(--storage-secondary-color);
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.storage-details {
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+}
+
+.storage-price-back {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Button Container Styling */
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Align buttons left and right */
+    width: 100%;
+    margin-top: 10px;
+}
+
+.storage-add-cart, .buy-now {
+    background-color: var(--primary-color);
+    color: var(--price-specs);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 1;
+    margin: 0 5px;
+    text-align: center;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.storage-add-cart:hover, .buy-now:hover {
+    background-color: var(--hover-button);
+    color: var(--text-color);
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Tablet Responsiveness */
+@media (max-width: 1024px) {
+    .storage-item {
+        width: calc(50% - 20px);
+    }
+
+    .storage-section h2 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .storage-container {
+        padding: 20px 10px;
+    }
+
+    .storage-section h2 {
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+    }
+
+    .storage-item {
+        width: 100%;
+        max-width: 100%;
+        height: 350px;
+    }
+
+    .storage-image {
+        max-width: 150px;
+        max-height: 150px;
+    }
+
+    .storage-name {
+        font-size: 1.1rem;
+    }
+
+    .storage-details {
+        font-size: 0.8rem;
+    }
+
+    .storage-price-back {
+        font-size: 1.3rem;
+    }
+
+    .storage-add-cart, .buy-now {
+        padding: 8px 15px;
+        font-size: 0.85rem;
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+    .storage-container {
+        padding: 15px 5px;
+    }
+
+    .storage-section h2 {
+        font-size: 1.3rem;
+    }
+
+    .storage-item {
+        height: 300px;
+    }
+
+    .storage-image {
+        max-width: 120px;
+        max-height: 120px;
+    }
+
+    .storage-name {
+        font-size: 1rem;
+    }
+
+    .storage-add-cart, .buy-now {
+        padding: 8px 16px;
+        font-size: 0.8rem;
+    }
+}
+
+/* Hover and Touch-Friendly Interactions */
+@media (hover: hover) {
+    .storage-item:hover .storage-item-front {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    .storage-item:hover .storage-item-back {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .storage-item:hover .storage-image {
+        transform: scale(0.9);
+    }
+}
+
+@media (hover: none) {
+    .storage-item-front {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    .storage-item-back {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .storage-image {
+        transform: scale(0.9);
+    }
+}
+
+
+/*-------------------------------------------------Quick nav navigations-----------------------------------------------------------*/
+
+/* Quick Navigation Styles */
+.quick-nav {
+    background-color: transparent; /* Transparent navigation background */
+    padding: 10px 0;
+    position: fixed;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%); /* Centers navigation vertically */
+    z-index: 1000;
+    transition: opacity 0.8s ease, transform 0.8s ease; /* Smooth dissolve effect */
+    opacity: 1; /* Fully visible */
+    visibility: visible; /* Ensure element is interactive */
+    width: auto; /* Keeps it compact */
+}
+
+.quick-nav.hidden {
+    opacity: 0; /* Fades out smoothly */
+    transform: scale(0.95); /* Slight shrinking effect */
+    visibility: hidden; /* Ensures no interaction during fade-out */
+}
+
+.quick-nav-container {
+    display: flex;
+    flex-direction: column; /* Stacks buttons vertically */
+    gap: 10px; /* Adds space between buttons */
+    align-items: flex-end; /* Aligns buttons to the right */
+    padding: 10px;
+}
+
+/* Button Styles */
+.quick-nav-btn {
+    background-color: #FF4500; /* Solid orange background for visibility */
+    color: white; /* Bright text color for contrast */
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease; /* Smooth hover effects */
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    width: fit-content; /* Compact button size */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
+    outline: none; /* Removes outlines */
+}
+
+.quick-nav-btn:hover {
+    background-color: var(--hover-button); /* Darker orange on hover */
+    color: white; /* Keeps text bright */
+    transform: scale(1.1); /* Adds zoom effect on hover */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3); /* Slightly deeper shadow on hover */
+}
+
+
+/* Example section padding for smooth scrolling */
+html {
+    scroll-padding-top: 90px; /* Adjust this value based on your header height */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .quick-nav {
+        top: auto; /* Remove vertical centering */
+        bottom: 10px; /* Place buttons closer to the bottom of the screen */
+        right: 40px; /* Adjust margin to fit smaller screens */
+        transform: none; /* Remove transform to avoid mid-screen placement */
+        max-width: 100px;
+    }
+    
+    .quick-nav-container {
+        align-items: center; /* Center-align the buttons */
+    }
+}
+
