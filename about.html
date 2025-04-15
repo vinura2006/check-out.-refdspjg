@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Store</title>
+    <link rel="stylesheet" href="./stylesheets/about.css">
+    <link rel="stylesheet" href="./stylesheets/header.css">
+    <link rel="stylesheet" href="./stylesheets/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="./javascripts/navbar.js"></script>
+    <link rel="manifest" href="site.manifest">
+    <link rel="icon" type="image/png" href="./assest/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="./assest/favicon.svg">
+    <link rel="shortcut icon" href="./assest/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assest/apple-touch-icon.png">
+</head>
+<body>
+    <header>
+        <div class="header-main">
+            <div class="header-container">
+                <div class="logo">
+                    <img src="./image/logo/logo.png" alt="GameTone, The logo of the website">
+                </div>
+    
+                <nav class="main-nav">
+                    <div class="nav-left">
+                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="upcoming.html" class="nav-link">Upcoming</a>
+                        <div class="dropdown">
+                            <a class="nav-link">Accessories <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown-content">
+                                <a href="consoles.html">Gaming Consoles</a>
+                                <a href="periphals.html">Gaming Peripherals</a>
+                            </div>
+                        </div>
+                        <a href="games.html" class="nav-link">Games</a>
+                        <a href="f&q.html" class="nav-link">FAQs</a>
+                        <a href="about.html" class="nav-link active">About Us/Contact</a>
+                    </div>
+    
+                    <div class="search-container">
+                        <input type="text" class="search-input" placeholder="Search..." aria-label="Search">
+                            <button class="search-btn" aria-label="Search">
+                                <i class="fas fa-search" aria-hidden="true"></i>
+                            </button>
+                    </div>
+                </nav>
+
+                <!-- Mobile search bar -->
+                <div class="mobile-search-container">
+                    <input type="text" class="search-input" placeholder="Search..." aria-label="Search">
+                    <button class="search-btn" aria-label="Search">
+                        <i class="fas fa-search"></i>
+                    </button>
+
+                </div>
+    
+                <div class="user-actions">
+                    <button class="cart-btn" aria-label="View Cart">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                    <button class="user-btn" aria-label="User Profile">
+                        <i class="fas fa-user"></i>
+                    </button>
+                </div>
+    
+                <button class="hamburger-btn" aria-label="Open Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+            </div>
+        </div>
+    
+        <!-- Mobile Navigation Menu -->
+        <div class="mobile-nav">
+            <button class="close-btn" aria-label="Close Menu">
+                <i class="fas fa-times"></i>
+            </button>
+
+            
+            <ul class="mobile-nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="upcoming.html">Upcoming</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="consoles.html">Consoles</a></li>
+                <li><a href="periphals.html">Gaming peripherals</a></li>
+                <li><a href="f&q.html">Q & A</a></li>
+                <li><a href="about.html">About/Contact Us</a></li>
+            </ul>
+
+            <div class="mobile-nav-actions">
+                <a href="404error.html" class="mobile-action-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    Shopping Cart
+                </a>
+                <a href="404error.html" class="mobile-action-btn">
+                    <i class="fas fa-user"></i>
+                    My Profile
+                </a>
+            </div>
+        </div>
+    </header>
+
+<main>
+    <!-- Hero -->
+    <section class="hero">
+        <div class="video-background">
+            <video autoplay muted loop>
+                <source src="./image/aboutus/video/main2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="hero-content">
+            <h1>Welcome to Gaming Paradise</h1>
+            <p>Discover the latest games, consoles, and gaming peripherals</p>
+        </div>
+    </section>
+    
+     <!-- Services/ branches -->
+     <section class="services">
+        <div class="container">
+            <h2>Check out for our service?</h2>
+            <div class="service-cards">
+                <div class="service-card">
+                    <img src="./image/aboutus/shop.colombo.jpeg" alt="Branch Colombo Image" onclick="location.href='#branch1'">
+                    <h3>Branch Colombo</h3>
+                    <p>"Experience the future of tech!"</p>
+                    <div class="social-links">
+                        <a href="404error.html" aria-label="Facebook">
+                            <i class="fab fa-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a href="404error.html" aria-label="Twitter">
+                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="404error.html" aria-label="Instagram">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <button class="more-info" onclick="location.href='#branch1'">More Info</button>
+                </div>
+                <div class="service-card">
+                    <img src="./image/aboutus/shop.kandy.jpg" alt="Branch Kandy Image" onclick="location.href='#branch2'">
+                    <h3>Branch Kandy</h3>
+                    <p>"We warmly invite you to our store!"</p>
+                    <div class="social-links">
+                        <a href="404error.html" aria-label="Facebook">
+                            <i class="fab fa-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a href="404error.html" aria-label="Twitter">
+                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="404error.html" aria-label="Instagram">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <button class="more-info" onclick="location.href='#branch2'">More Info</button>
+                </div>
+                <div class="service-card">
+                    <img src="./image/aboutus/shop.kegalle.jpeg" alt="Branch Kegalle Image" onclick="location.href='#branch3'">
+                    <h3>Branch Kegalle</h3>
+                    <p>"Explore the world of tech!"</p>
+                    <div class="social-links">
+                        <a href="404error.html" aria-label="Facebook">
+                            <i class="fab fa-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a href="404error.html" aria-label="Twitter">
+                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="404error.html" aria-label="Instagram">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <button class="more-info" onclick="location.href='#branch3'">More Info</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Open -->
+    <section class="opening-hours">
+        <div class="container">
+            <h2>Open Hours</h2>
+            <div class="hours-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Branch</th>
+                            <th>Weekdays</th>
+                            <th>Weekends</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Main branch</td>
+                            <td>08:00 AM - 06:00 PM</td>
+                            <td>09:00 AM - 04:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Kandy Branch</td>
+                            <td>08:00 AM - 04:00 PM</td>
+                            <td>09:00 AM - 02:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Kegalle Branch</td>
+                            <td>08:00 AM - 4:00 PM</td>
+                            <td>09:00 AM - 12:00 PM</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3"> Closed on Poya Days.</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Branches -->
+    <section id="branch1" class="branch-info">
+        <div class="container">
+            <!-- Branch 1 -->
+            <div class="branch-card">
+                <h3>Branch Colombo</h3>
+                <div class="branch-content">
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d865.3301142306826!2d79.86931740230563!3d6.92266610194288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2slk!4v1736770333198!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="contact-info">
+                        <h4>Contact</h4>
+                        <p>Phone: 011 22 66 211</p>
+                        <p>Email: mainbranch(gameTon)@.com</p>
+                        <p>Address: No.12/43, Kandy road, Colombo 10.</p>
+                        <h4>Our Services</h4>
+                        <p>At our game retailer shop, we pride ourselves on offering an extensive collection of the latest video games, consoles, and accessories to satisfy every gamer's needs. Whether you're a casual player or a hardcore enthusiast, our knowledgeable staff is here to provide personalized recommendations and support. We also offer game trade-ins, allowing you to upgrade your collection at a fraction of the cost. With regular promotions, events, and exclusive releases, we're your ultimate destination for all things gaming. Level up your experience with us!</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Branch 2 -->
+            <div class="branch-card">
+                <div id="branch2"> 
+                </div>
+                <h3>Branch Kandy</h3>
+                <div class="branch-content">
+                    <div class="contact-info">
+                        <h4>Contact</h4>
+                        <p>Phone: 081 11 32 956</p>
+                        <p>Email: kandybranch(gameTon)@.com</p>
+                        <p>Address:  No.1/20, Old Kandy road, Mulgampola.</p>
+                        <h4>Visit Us</h4>
+                        <p>Our game retailer shop is your gateway to the ultimate gaming experience. We offer a curated selection of the hottest new releases, timeless classics, and exclusive special editions, ensuring that every gamer finds something to love. Our expert team is always on hand to provide tailored recommendations and insider tips. With our hassle-free trade-in program, you can easily swap your old games for new ones. Plus, our shop regularly hosts game launch events and midnight releases, making sure you're among the first to get your hands on the latest titles. Dive into the world of gaming with us and elevate your play!</p>
+                    </div>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d916.0717892535262!2d80.61982301376366!3d7.2807358456773255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2slk!4v1736770269534!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Branch 3 -->
+            <div class="branch-card">
+                <div id="branch3">
+                </div>
+                <h3>Branch Kegalle</h3>
+                <div class="branch-content">
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d816.1772643171097!2d80.34471100608464!3d7.253158036410532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2slk!4v1736769534896!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="contact-info">
+                        <h4>Contact</h4>
+                        <p>Phone: 035 22 66 321</p>
+                        <p>Email: kegallebranch(gameTon)@.com</p>
+                        <p>Address: No.3/21, Rambukkana road, Kegalle.</p>
+                        <h4>Visit Us</h4>
+                        <p>At our game retailer shop, we cater to gamers of all ages and skill levels. Our extensive inventory includes everything from cutting-edge consoles to rare collectibles and merchandise. We pride ourselves on our exceptional customer service, offering support for game installations, hardware setup, and troubleshooting. Whether you're a solo player or looking to connect with fellow gamers, our community events and online forums provide the perfect platform to share your passion. With competitive pricing and exclusive member discounts, we make gaming accessible and enjoyable for everyone. Join us and experience the future of gaming today!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+        
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="./image/logo/logo.png" alt="Gaming Logo">
+            </div>
+            <div class="footer-links">
+                <a href="404error.html">Terms & Policy</a>
+                <a href="404error.html">Privacy Policy</a>
+                <a href="404error.html">Cookie Policy</a>
+                <a href="404error.html">Contact us</a>
+            </div>
+            <div class="social-links">
+                <a href="404error.html" aria-label="Twitch">
+                    <i class="fab fa-twitch"></i>
+                </a>
+                <a href="404error.html" aria-label="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="404error.html" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="404error.html" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="404error.html" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2025 All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

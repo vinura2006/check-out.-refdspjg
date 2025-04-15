@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./stylesheets/upcoming.css">
+    <link rel="stylesheet" href="./stylesheets/header.css">
+    <link rel="stylesheet" href="./stylesheets/footer.css">
+    <script src="./javascripts/upcomming.js"></script>
+    <script src="./javascripts/header.js"></script>
+    <script src="./javascripts/navbar.js"></script>
+    <link rel="manifest" href="site.manifest">
+    <link rel="icon" type="image/png" href="./assest/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="./assest/favicon.svg">
+    <link rel="shortcut icon" href="./assest/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assest/apple-touch-icon.png">
+</head>
+<body>
+    <header>
+        <div class="header-main">
+            <div class="header-container">
+                <div class="logo">
+                    <img src="./image/logo/logo.png" alt="GameTone, The logo of the website">
+                </div>
+    
+                <nav class="main-nav">
+                    <div class="nav-left">
+                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="upcoming.html" class="nav-link active">Upcoming</a>
+                        <div class="dropdown">
+                            <a class="nav-link">Accessories <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown-content">
+                                <a href="consoles.html">Gaming Consoles</a>
+                                <a href="periphals.html">Gaming Peripherals</a>
+                            </div>
+                        </div>
+                        <a href="games.html" class="nav-link">Games</a>
+                        <a href="f&q.html" class="nav-link">FAQs</a>
+                        <a href="about.html" class="nav-link">About Us/Contact</a>
+                    </div>
+    
+                    <div class="search-container">
+                        <input type="text" class="search-input" placeholder="Search..." aria-label="Search">
+                            <button class="search-btn" aria-label="Search">
+                                <i class="fas fa-search" aria-hidden="true"></i>
+                            </button>
+                    </div>
+                </nav>
+
+                <!-- Mobile search bar -->
+                <div class="mobile-search-container">
+                    <input type="text" class="search-input" placeholder="Search..." aria-label="Search">
+                    <button class="search-btn" aria-label="Search">
+                        <i class="fas fa-search"></i>
+                    </button>
+
+                </div>
+    
+                <div class="user-actions">
+                    <button class="cart-btn" aria-label="View Cart">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                    <button class="user-btn" aria-label="User Profile">
+                        <i class="fas fa-user"></i>
+                    </button>
+                </div>
+    
+                <button class="hamburger-btn" aria-label="Open Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+            </div>
+        </div>
+    
+        <!-- Mobile Navigation Menu -->
+        <div class="mobile-nav">
+            <button class="close-btn" aria-label="Close Menu">
+                <i class="fas fa-times"></i>
+            </button>
+
+            
+            <ul class="mobile-nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="upcoming.html">Upcoming</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="consoles.html">Consoles</a></li>
+                <li><a href="periphals.html">Gaming peripherals</a></li>
+                <li><a href="f&q.html">Q & A</a></li>
+                <li><a href="about.html">About/Contact Us</a></li>
+            </ul>
+
+            <div class="mobile-nav-actions">
+                <a href="404error.html" class="mobile-action-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    Shopping Cart
+                </a>
+                <a href="404error.html" class="mobile-action-btn">
+                    <i class="fas fa-user"></i>
+                    My Profile
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Upcoming Featured Game Section -->
+        <section class="upcoming">
+            <div class="container">
+                <h2>Upcoming</h2>
+                <div class="upcoming-content">
+                    <div class="left-box">
+                        <img src="./image2/upcoming/main_upcomming.jpeg" alt="Upcoming Game">
+                        <a href="404error.html" class="pre-order-btn">
+                            <i class="fas fa-tag"></i>Pre-order Now
+                        </a>                        
+                    </div>
+                    <div class="right-box">
+                        <div class="video-box">
+                            <video class="responsive-video" controls>
+                                <source src="./image2/upcoming/Video/trailer.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="description-box">
+                            <p>Call of Duty: Black Ops 6 Zombies is a round-based survival mode that focuses on intense, action-packed gameplay against hordes of zombies. The game features two new maps at launch: Terminus, a remote garrison in the Philippine Sea, and Liberty Falls, a West Virginian town overrun by chaos due to a Dark Aether outbreak.
+                                Call of Duty: Black Ops 6 Zombies is part of the game's second season, which is set to release on Tuesday, January 28, 2025. This update will bring new content and improvements across Multiplayer, Zombies, and Warzone modes.
+                            </p>
+                            <a href="404error.html" class="pre-order-btn desktop-btn">
+                                <i class="fas fa-tag"></i>Pre-order Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- February Games Carousel -->
+        <section class="games-carousel-section">
+            <div class="container">
+                <h2>On this February</h2>
+                <div class="game-carousel">
+                    <button class="carousel-arrow carousel-prev">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    
+                    <div class="game-carousel-track">
+                        <!-- Game Card 1 -->
+                        <div class="game-card">
+                            <img src="./image2/upcoming/game.1.jpeg" alt="Call of Duty: Cold War Zombies">
+                            <div class="game-info">
+                                <h3 class="game-title">Call of Duty: Cold War Zombies</h3>
+                                <div class="game-meta">
+                                    <span class="release-date">Release: Feb 10, 2025</span>
+                                    <span class="price">$3.69</span>
+                                </div>
+                                <a href="404error.html" class="pre-order-btn">
+                                    <i class="fas fa-tag"></i>Pre-order Now
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Game Card 2 -->
+                        <div class="game-card">
+                            <img src="./image2/upcoming/game.2.jpg" alt="Call of Duty: Black Ops">
+                            <div class="game-info">
+                                <h3 class="game-title">Call of Duty: Black Ops</h3>
+                                <div class="game-meta">
+                                    <span class="release-date">Release: Sep 09, 2025</span>
+                                    <span class="price">$14.90</span>
+                                </div>
+                                <a href="404error.html" class="pre-order-btn">
+                                    <i class="fas fa-tag"></i>Pre-order Now
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Game Card 3 -->
+                        <div class="game-card">
+                            <img src="./image2/upcoming/game.3.jpg" alt="Call of Duty: World at War">
+                            <div class="game-info">
+                                <h3 class="game-title">Call of Duty: World at War</h3>
+                                <div class="game-meta">
+                                    <span class="release-date">Release: Feb 03, 2025</span>
+                                    <span class="price">$39.99</span>
+                                </div>
+                                <a href="404error.html" class="pre-order-btn">
+                                    <i class="fas fa-tag"></i>Pre-order Now
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Game Card 4 -->
+                        <div class="game-card">
+                            <img src="./image2/upcoming/game.4.jpg" alt="Final Fantasy XVI">
+                            <div class="game-info">
+                                <h3 class="game-title">Final Fantasy XVI</h3>
+                                <div class="game-meta">
+                                    <span class="release-date">Release: Mar 04, 2025</span>
+                                    <span class="price">$33.33</span>
+                                </div>
+                                <a href="404error.html" class="pre-order-btn">
+                                    <i class="fas fa-tag"></i>Pre-order Now
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Game Card 5 -->
+                        <div class="game-card">
+                            <img src="./image2/upcoming/game.5.jpeg" alt="Game 5">
+                            <div class="game-info">
+                                <h3 class="game-title">Game Title 5</h3>
+                                <div class="game-meta">
+                                    <span class="release-date">Release: Feb 09, 2025</span>
+                                    <span class="price">$19.99</span>
+                                </div>
+                                <a href="404error.html" class="pre-order-btn">
+                                    <i class="fas fa-tag"></i>Pre-order Now
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Game Card 6 -->
+                        <div class="game-card">
+                            <img src="./image2/upcoming/game.6.avif" alt="Game 6">
+                            <div class="game-info">
+                                <h3 class="game-title">Game Title 6</h3>
+                                <div class="game-meta">
+                                    <span class="release-date">Release: Feb 13, 2025</span>
+                                    <span class="price">$20.00</span>
+                                </div>
+                                <a href="404error.html" class="pre-order-btn">
+                                    <i class="fas fa-tag"></i>Pre-order Now
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Game Card 7 -->
+                        <div class="game-card">
+                            <img src="./image2/upcoming/game.7.jpg" alt="Game 7">
+                            <div class="game-info">
+                                <h3 class="game-title">Game Title 7</h3>
+                                <div class="game-meta">
+                                    <span class="release-date">Release: Jan 31, 2025</span>
+                                    <span class="price">$9.99</span>
+                                </div>
+                                <a href="404error.html" class="pre-order-btn">
+                                    <i class="fas fa-tag"></i>Pre-order Now
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Game Card 8 -->
+                        <div class="game-card">
+                            <img src="./image2/upcoming/game.8.avif" alt="Game 8">
+                            <div class="game-info">
+                                <h3 class="game-title">Game Title 8</h3>
+                                <div class="game-meta">
+                                    <span class="release-date">Release: Jul 01, 2025</span>
+                                    <span class="price">$39.82</span>
+                                </div>
+                                <a href="404error.html" class="pre-order-btn">
+                                    <i class="fas fa-tag"></i>Pre-order Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="carousel-arrow carousel-next">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Heavily Anticipated Section -->
+        <section class="heavily-anticipated">
+            <div class="container">
+                <h2>Heavily Anticipated</h2>
+                <div class="big-box">
+                    <div class="text-box">
+                        <p>Stay tuned for the most awaited games of the season! Here are some of the heavily anticipated titles coming your way.</p>
+                    </div>
+                    <div class="grid-container">
+                        <div class="grid-item">
+                            <div class="grid-item-inner">
+                                <img src="./image2/upcoming/anticipated1.jpg" alt="War Zone">
+                                <div class="grid-item-content">
+                                    <p class="game-name">War Zone</p>
+                                    <a href="404error.html" class="pre-order-btn">
+                                        <i class="fas fa-tag"></i>Pre-order Now
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="grid-item-inner">
+                                <img src="./image2/upcoming/anticipated2.jpg" alt="Asphalt 8">
+                                <div class="grid-item-content">
+                                    <p class="game-name">Asphalt 8</p>
+                                    <a href="404error.html" class="pre-order-btn">
+                                        <i class="fas fa-tag"></i>Pre-order Now
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="grid-item-inner">
+                                <img src="./image2/upcoming/anticipated3.jpg" alt="GTA 6">
+                                <div class="grid-item-content">
+                                    <p class="game-name">GTA VI</p>
+                                    <a href="404error.html" class="pre-order-btn">
+                                        <i class="fas fa-tag"></i>Pre-order Now
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="grid-item-inner">
+                                <img src="./image2/upcoming/anticipated4.avif" alt="Far Cry 6">
+                                <div class="grid-item-content">
+                                    <p class="game-name">Far Cry VI</p>
+                                    <a href="404error.html" class="pre-order-btn">
+                                        <i class="fas fa-tag"></i>Pre-order Now
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="./image/logo/logo.png" alt="Gaming Logo">
+                </div>
+                <div class="footer-links">
+                    <a href="404error.html">Terms & Policy</a>
+                    <a href="404error.html">Privacy Policy</a>
+                    <a href="404error.html">Cookie Policy</a>
+                    <a href="404error.html">Contact us</a>
+                </div>
+                <div class="social-links">
+                    <a href="404error.html" aria-label="Twitch">
+                        <i class="fab fa-twitch"></i>
+                    </a>
+                    <a href="404error.html" aria-label="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="404error.html" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="404error.html" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="404error.html" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © 2025 All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    </body>
+</html>
+    
+    

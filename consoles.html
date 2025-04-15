@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Store</title>
+    <link rel="stylesheet" href="./stylesheets/consoles.css">
+    <link rel="stylesheet" href="./stylesheets/header.css">
+    <link rel="stylesheet" href="./stylesheets/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="./javascripts/navbar.js"></script>
+    <script src="./javascripts/playstation.js"></script>
+    <link rel="manifest" href="site.manifest">
+    <link rel="icon" type="image/png" href="./assest/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="./assest/favicon.svg">
+    <link rel="shortcut icon" href="./assest/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assest/apple-touch-icon.png">
+
+</head>
+<body>
+    <header>
+        <div class="header-main">
+            <div class="header-container">
+                <div class="logo">
+                    <img src="./image/logo/logo.png" alt="GameTone, The logo of the website">
+                </div>
+    
+                <nav class="main-nav">
+                    <div class="nav-left">
+                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="upcoming.html" class="nav-link">Upcoming</a>
+                        <div class="dropdown">
+                            <a class="nav-link active">Accessories <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown-content">
+                                <a href="consoles.html">Gaming Consoles</a>
+                                <a href="periphals.html">Gaming Peripherals</a>
+                            </div>
+                        </div>
+                        <a href="games.html" class="nav-link">Games</a>
+                        <a href="f&q.html" class="nav-link">FAQs</a>
+                        <a href="about.html" class="nav-link">About Us/Contact</a>
+                    </div>
+    
+                    <div class="search-container">
+                        <input type="text" class="search-input" placeholder="Search..." aria-label="Search">
+                            <button class="search-btn" aria-label="Search">
+                                <i class="fas fa-search" aria-hidden="true"></i>
+                            </button>
+                    </div>
+                </nav>
+
+                <!-- Mobile search bar -->
+                <div class="mobile-search-container">
+                    <input type="text" class="search-input" placeholder="Search..." aria-label="Search">
+                    <button class="search-btn" aria-label="Search">
+                        <i class="fas fa-search"></i>
+                    </button>
+
+                </div>
+    
+                <div class="user-actions">
+                    <button class="cart-btn" aria-label="View Cart">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                    <button class="user-btn" aria-label="User Profile">
+                        <i class="fas fa-user"></i>
+                    </button>
+                </div>
+    
+                <button class="hamburger-btn" aria-label="Open Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+            </div>
+        </div>
+    
+        <!-- Mobile Navigation Menu -->
+        <div class="mobile-nav">
+            <button class="close-btn" aria-label="Close Menu">
+                <i class="fas fa-times"></i>
+            </button>
+
+            
+            <ul class="mobile-nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="upcoming.html">Upcoming</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="consoles.html">Consoles</a></li>
+                <li><a href="periphals.html">Gaming peripherals</a></li>
+                <li><a href="f&q.html">Q & A</a></li>
+                <li><a href="about.html">About/Contact Us</a></li>
+            </ul>
+
+            <div class="mobile-nav-actions">
+                <a href="404error.html" class="mobile-action-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    Shopping Cart
+                </a>
+                <a href="404error.html" class="mobile-action-btn">
+                    <i class="fas fa-user"></i>
+                    My Profile
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-content">
+            <!-- Main Categories -->
+            <section class="categories">
+                <div class="category-card"><a href="#playstation">PlayStation</a></div>
+                <div class="category-card"><a href="#xbox">X-Box</a></div>
+                <div class="category-card"><a href="#steamdeck">Steam Deck</a></div>
+                <div class="category-card"><a href="#nintendo">Nintendo</a></div>
+            </section>           
+            <section class="platform-section" id="playstation">
+                <h2>PlayStation</h2>
+                <div class="platform-container">
+                    <div class="image-wrapper">
+                        <a href="404error.html" aria-label="PlayStation 1 Console">
+                            <img src="./image/consoles/ps1.png" alt="PS-1" class="ps-image">
+                        </a>
+                        <div class="spec-overlay">
+                            <p>CPU: 33.9 MHz</p>
+                            <p>Memory: 2 MB</p>
+                            <p>Storage: CD-ROM</p>
+                        </div>
+                    </div>
+                    <div class="image-wrapper" id="wrapper-ps-2">
+                        <a href="404error.html" aria-label="PlayStation 2 Console">
+                            <img src="./image/consoles/ps2.jpg" alt="PS-2" class="ps-image">
+                        </a>
+                        <div class="spec-overlay">
+                            <p>CPU: 294 MHz</p>
+                            <p>Memory: 1 MB</p>
+                            <p>Storage: DVD-ROM</p>
+                        </div>
+                    </div>
+                    <div class="image-wrapper" id="wrapper-ps-3">
+                        <a href="404error.html" aria-label="PlayStation 3 Console">
+                            <img src="./image/consoles/ps3.jpg" alt="PS-3" class="ps-image">
+                        </a>
+                        <div class="spec-overlay">
+                            <p>CPU: 3.2 GHz</p>
+                            <p>Memory: 2 MB</p>
+                            <p>Storage: Blu-ray Disc</p>
+                        </div>
+                    </div>
+                    <div class="image-wrapper" id="wrapper-ps-4">
+                        <a href="404error.html" aria-label="PlayStation 4 Console">
+                            <img src="./image/consoles/ps4.webp" alt="PS-4" class="ps-image">
+                        </a>
+                        <div class="spec-overlay">
+                            <p>CPU: 1.6 GHz</p>
+                            <p>Memory: 8 GB</p>
+                            <p>Storage: Blu-ray Disc</p>
+                        </div>
+                    </div>
+                    <div class="image-wrapper" id="wrapper-ps-5">
+                        <a href="404error.html" aria-label="PlayStation 5 Console">
+                            <img src="./image/consoles/ps5.webp" alt="PS-5" class="ps-image">
+                        </a>
+                        <div class="spec-overlay">
+                            <p>CPU: 3.5 GHz</p>
+                            <p>Memory: 16 GB</p>
+                            <p>Storage: Ultra HD Blu-ray</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="xbox-section" id="xbox">
+                <h2>X-Box</h2>
+                <div class="xbox-container">
+                    <div class="image-wrapper">
+                        <a href="404error.html" aria-label="Original Xbox Console">
+                            <img src="./image/consoles/xbox.jpg" alt="Xbox" class="xbox-image">
+                        </a>
+                        <div class="spec-overlay">
+                            <p>CPU: 733 MHz</p>
+                            <p>Memory: 924 MB</p>
+                            <p>Storage: 8-10 GB HDD</p>
+                        </div>
+                    </div>
+                    <div class="image-wrapper" id="wrapper-xbox-2">
+                        <a href="404error.html" aria-label="Xbox 360 Console">
+                            <img src="./image/consoles/xbox360.webp" alt="Xbox 360" class="xbox-image">
+                        </a>
+                        <div class="spec-overlay">
+                            <p>CPU: 3.2 GHz</p>
+                            <p>Memory: 4 MB</p>
+                            <p>Storage: 20-250 GB HDD</p>
+                        </div>
+                    </div>
+                    <div class="image-wrapper" id="wrapper-xbox-3">
+                        <a href="404error.html" aria-label="Xbox One Console">
+                            <img src="./image/consoles/xboxone.jpg" alt="Xbox One" class="xbox-image">
+                        </a>
+                        <div class="spec-overlay">
+                            <p>CPU: 1.75 GHz</p>
+                            <p>Memory: 8 GB</p>
+                            <p>Storage: 500 GB - 2 TB HDD</p>
+                        </div>
+                    </div>
+                    <div class="image-wrapper" id="wrapper-xbox-4">
+                        <a href="404error.html" aria-label="Xbox Series X|S Console">
+                            <img src="./image/consoles/xbox.sx.jpg" alt="Xbox X|S" class="xbox-image">
+                        </a>
+                        <div class="spec-overlay">
+                            <p>CPU: 3.8 GHz</p>
+                            <p>Memory: 16 GB</p>
+                            <p>Storage: 1 TB SSD</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="platform-section" id="steamdeck">
+                <h2>Steam Deck</h2>
+                <div class="steam-container">
+                    <a href="404error.html" class="card">
+                        <img src="./image/consoles/steamdeckoled.jpg" alt="OLED Version" class="image-placeholder">
+                        <div class="overlay">OLED Version</div>
+                    </a>
+                    <a href="404error.html" class="card">
+                        <img src="./image/consoles/steamdecklcd.jpg" alt="LCD Version" class="image-placeholder">
+                        <div class="overlay">LCD Version</div>
+                    </a>
+                </div>
+            </section>
+
+            <section class="platform-section" id="nintendo">
+                <h2>Nintendo</h2>
+                <div class="grid">
+                    <div class="grid-item">
+                      <img src="./image/consoles/ninetendo3.jpg" alt="Original PlayStation">
+                      <div class="specs">
+                        <h3>Original PlayStation</h3>
+                        <p>CPU: 33.9 MHz</p>
+                        <p>Memory: 2 MB</p>
+                        <p>Storage: CD-ROM</p>
+                      </div>
+                    </div>
+                    <div class="grid-item">
+                      <img src="./image/consoles/ninetendo2.png" alt="PlayStation 2">
+                      <div class="specs">
+                        <h3>PlayStation 2</h3>
+                        <p>CPU: 294 MHz</p>
+                        <p>Memory: 32 MB</p>
+                        <p>Storage: DVD-ROM</p>
+                      </div>
+                    </div>
+                    <div class="grid-item">
+                      <img src="./image/consoles/ninetendo4.webp" alt="PlayStation 4">
+                      <div class="specs">
+                        <h3>PlayStation 4</h3>
+                        <p>CPU: 1.6 GHz 8-core</p>
+                        <p>Memory: 8 GB GDDR5</p>
+                        <p>Storage: 500 GB HDD</p>
+                      </div>
+                    </div>
+                  </div>
+            </section> 
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="./image/logo/logo.png" alt="Gaming Logo">
+                </div>
+                <div class="footer-links">
+                    <a href="404error.html">Terms & Policy</a>
+                    <a href="404error.html">Privacy Policy</a>
+                    <a href="404error.html">Cookie Policy</a>
+                    <a href="404error.html">Contact us</a>
+                </div>
+                <div class="social-links">
+                    <a href="404error.html" aria-label="Twitch">
+                        <i class="fab fa-twitch"></i>
+                    </a>
+                    <a href="404error.html" aria-label="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="404error.html" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="404error.html" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="404error.html" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © 2025 All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    </body>
+    </html>

@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Store</title>
+    <link rel="stylesheet" href="./stylesheets/periphals.css">
+    <link rel="stylesheet" href="./stylesheets/header.css">
+    <link rel="stylesheet" href="./stylesheets/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="./javascripts/navbar.js"></script>
+    <link rel="manifest" href="site.manifest">
+    <link rel="icon" type="image/png" href="./assest/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="./assest/favicon.svg">
+    <link rel="shortcut icon" href="./assest/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assest/apple-touch-icon.png">
+    <script src="./javascripts/cart.js" defer></script>
+    <script src="./json/periphals.json"></script>
+</head>
+    <!-- Header -->
+    <header>
+        <div class="header-main">
+            <div class="header-container">
+                <div class="logo">
+                    <img src="./image/logo/logo.png" alt="GameTone, The logo of the website">
+                </div>
+    
+                <nav class="main-nav">
+                    <div class="nav-left">
+                        <a href="index.html" >Home</a>
+                        <a href="upcoming.html" class="nav-link">Upcoming</a>
+                        <div class="dropdown">
+                            <a class="nav-link">Accessories <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown-content">
+                                <a href="consoles.html">Gaming Consoles</a>
+                                <a href="periphals.html" class="nav-link active">Gaming Peripherals</a>
+                            </div>
+                        </div>
+                        <a href="games.html" class="nav-link">Games</a>
+                        <a href="f&q.html" class="nav-link">FAQs</a>
+                        <a href="about.html" class="nav-link">About Us/Contact</a>
+                    </div>
+    
+                    <div class="search-container">
+                        <input type="text" class="search-input" placeholder="Search..." aria-label="Search">
+                            <button class="search-btn" aria-label="Search">
+                                <i class="fas fa-search" aria-hidden="true"></i>
+                            </button>
+                    </div>
+                </nav>
+
+                <!-- Mobile search bar -->
+                <div class="mobile-search-container">
+                    <input type="text" class="search-input" placeholder="Search..." aria-label="Search">
+                    <button class="search-btn" aria-label="Search">
+                        <i class="fas fa-search"></i>
+                    </button>
+
+                </div>
+    
+                <div class="user-actions">
+                    <button class="cart-btn" aria-label="View Cart" onclick="location.href='cart.html';">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>                    
+                    <button class="user-btn" aria-label="User Profile">
+                        <i class="fas fa-user"></i>
+                    </button>
+                </div>
+    
+                <button class="hamburger-btn" aria-label="Open Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+            </div>
+        </div>
+    
+        <!-- Mobile Navigation Menu -->
+        <div class="mobile-nav">
+            <button class="close-btn" aria-label="Close Menu">
+                <i class="fas fa-times"></i>
+            </button>
+
+            
+            <ul class="mobile-nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="upcoming.html">Upcoming</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="consoles.html">Consoles</a></li>
+                <li><a href="periphals.html">Gaming peripherals</a></li>
+                <li><a href="f&q.html">Q & A</a></li>
+                <li><a href="about.html">About/Contact Us</a></li>
+            </ul>
+
+            <div class="mobile-nav-actions">
+                <a href="cart.html" class="mobile-action-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    Shopping Cart
+                </a>
+                <a href="404error.html" class="mobile-action-btn">
+                    <i class="fas fa-user"></i>
+                    My Profile
+                </a>
+            </div>
+        </div>
+    </header>
+
+       <!-- ---------------------------------------------------Quick links------------------------------------------------------------ -->
+
+    <div class="quick-nav" id="quickNav">
+        <div class="quick-nav-container">
+            <a href="#processors" class="quick-nav-btn">Processors</a>
+            <a href="#graphics-section" class="quick-nav-btn">Graphics Cards</a>
+            <a href="#motherboards" class="quick-nav-btn">Motherboards</a>
+            <a href="#ram-section" class="quick-nav-btn">RAM Cards</a>
+            <a href="#storage-section" class="quick-nav-btn">Storage Devices</a>
+        </div>
+    </div>
+    
+    <!-- ------------------------------------------------From here Processors section------------------------------------------------- -->
+    <!-- ---------------------------------------------------Parts Sections------------------------------------------------------------ -->
+
+    <div class="parts-container">
+        <section id="processors" class="parts-section">
+            <h2>Processors</h2>
+            <div class="parts-grid">
+                <!-- Processor 1 -->
+                <div class="part-card" id="processor1">
+                    <img src="./image3/periphirals_new/processer_AMD.avif" alt="AMD Ryzen 5" class="part-card-image">
+                    <div class="part-card-overlay">
+                        <div class="part-details-container">
+                            <div class="part-details">
+                                <h3 class="part-name">AMD Ryzen 5</h3>
+                                <p class="part-specs">6 Cores | 3.7 GHz | AM4 Socket</p>
+                                <p class="part-price">$199.67</p>
+                            </div>
+                        </div>
+                        <div class="button-container">
+                            <button class="add-to-cart">Add to Cart</button>
+                            <button class="buy-now">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Processor 2 -->
+                <div class="part-card" id="processor2">
+                    <img src="./image3/periphirals_new/processer_Ryzen_2nd gen.avif" alt="AMD Ryzen 7 2700X" class="part-card-image">
+                    <div class="part-card-overlay">
+                        <div class="part-details-container">
+                            <div class="part-details">
+                                <h3 class="part-name">AMD Ryzen 7 2700X</h3>
+                                <p class="part-specs">8 Cores | 4.3 GHz | AM4 Socket</p>
+                                <p class="part-price">$239.45</p>
+                            </div>
+                        </div>
+                        <div class="button-container">
+                            <button class="add-to-cart">Add to Cart</button>
+                            <button class="buy-now">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Processor 3 -->
+                <div class="part-card" id="processor3">
+                    <img src="./image3/periphirals_new/processer_AMD_phenom.avif" alt="Apple M1" class="part-card-image">
+                    <div class="part-card-overlay">
+                        <div class="part-details-container">
+                            <div class="part-details">
+                                <h3 class="part-name">Apple M1</h3>
+                                <p class="part-specs">8 Cores | Up to 3.2 GHz | Apple Silicon</p>
+                                <p class="part-price">$199.23</p>
+                            </div>
+                        </div>
+                        <div class="button-container">
+                            <button class="add-to-cart">Add to Cart</button>
+                            <button class="buy-now">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Processor 4 -->
+                <div class="part-card" id="processor4">
+                    <img src="./image3/periphirals_new/processer_intel.avif" alt="Apple M2" class="part-card-image">
+                    <div class="part-card-overlay">
+                        <div class="part-details-container">
+                            <div class="part-details">
+                                <h3 class="part-name">Apple M2</h3>
+                                <p class="part-specs">10 Cores | Up to 3.5 GHz | Apple Silicon</p>
+                                <p class="part-price">$249.79</p>
+                            </div>
+                        </div>
+                        <div class="button-container">
+                            <button class="add-to-cart">Add to Cart</button>
+                            <button class="buy-now">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Processor 5 -->
+                <div class="part-card" id="processor5">
+                    <img src="./image3/periphirals_new/processer_intel_14th gen.avif" alt="Intel Core i7-14700K" class="part-card-image">
+                    <div class="part-card-overlay">
+                        <div class="part-details-container">
+                            <div class="part-details">
+                                <h3 class="part-name">Apple A9</h3>
+                                <p class="part-specs">20 Cores | 2.32 GHz | LGA 185</p>
+                                <p class="part-price">$99.93</p>
+                            </div>
+                        </div>
+                        <div class="button-container">
+                            <button class="add-to-cart">Add to Cart</button>
+                            <button class="buy-now">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="parts-grid">
+                <!-- Processor 6 -->
+                <div class="part-card" id="processor6">
+                    <img src="./image3/periphirals_new/processer_intel_i7.avif" alt="Intel Core i7-10700K" class="part-card-image">
+                    <div class="part-card-overlay">
+                        <div class="part-details-container">
+                            <div class="part-details">
+                                <h3 class="part-name">Intel Core i7-10700K</h3>
+                                <p class="part-specs">8 Cores | 3.8 GHz | LGA 1200</p>
+                                <p class="part-price">$319.99</p>
+                            </div>
+                        </div>
+                        <div class="button-container">
+                            <button class="add-to-cart">Add to Cart</button>
+                            <button class="buy-now">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Processor 7 -->
+                <div class="part-card" id="processor7">
+                    <img src="./image3/periphirals_new/processer_intel_i7_10th gen.avif" alt="Intel Core i7-10700" class="part-card-image">
+                    <div class="part-card-overlay">
+                        <div class="part-details-container">
+                            <div class="part-details">
+                                <h3 class="part-name">Intel Core i7-10700</h3>
+                                <p class="part-specs">8 Cores | 2.9 GHz | LGA 1200</p>
+                                <p class="part-price">$299.97</p>
+                            </div>
+                        </div>
+                        <div class="button-container">
+                            <button class="add-to-cart">Add to Cart</button>
+                            <button class="buy-now">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Processor 8 -->
+                <div class="part-card" id="processor8">
+                    <img src="./image3/periphirals_new/processer_intel_i7_4th gen.avif" alt="Intel Core i7-4790K" class="part-card-image">
+                    <div class="part-card-overlay">
+                        <div class="part-details-container">
+                            <div class="part-details">
+                                <h3 class="part-name">Intel Core i7-4790K</h3>
+                                <p class="part-specs">4 Cores | 4.0 GHz | LGA 1150</p>
+                                <p class="part-price">$239.80</p>
+                            </div>
+                        </div>
+                        <div class="button-container">
+                            <button class="add-to-cart">Add to Cart</button>
+                            <button class="buy-now">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Processor 9 -->
+                <div class="part-card" id="processor9">
+                    <img src="./image3/periphirals_new/processer_intel_i9.avif" alt="Intel Core i9-9900K" class="part-card-image">
+                    <div class="part-card-overlay">
+                        <div class="part-details-container">
+                            <div class="part-details">
+                                <h3 class="part-name">Intel Core i9-9900K</h3>
+                                <p class="part-specs">8 Cores | 3.6 GHz | LGA 1151</p>
+                                <p class="part-price">$499.83</p>
+                            </div>
+                        </div>
+                        <div class="button-container">
+                            <button class="add-to-cart">Add to Cart</button>
+                            <button class="buy-now">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Processor 10 -->
+                <div class="part-card" id="processor10">
+                    <img src="./image3/periphirals_new/processer_Ryzen_zen6.avif" alt="AMD Ryzen 9 Zen 6" class="part-card-image">
+                    <div class="part-card-overlay">
+                        <div class="part-details-container">
+                            <div class="part-details">
+                                <h3 class="part-name">AMD Ryzen 9 Zen 6</h3>
+                                <p class="part-specs">12 Cores | 4.2 GHz | AM5 Socket</p>
+                                <p class="part-price">$529.45</p>
+                            </div>
+                        </div>
+                        <div class="button-container">
+                            <button class="add-to-cart">Add to Cart</button>
+                            <button class="buy-now">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Processor 11 -->
+                <div class="part-card" id="processor11">
+                    <img src="./image3/periphirals_new/processer_Ryzen.avif" alt="AMD Ryzen 9 5900X" class="part-card-image">
+                    <div class="part-card-overlay">
+                        <div class="part-details-container">
+                            <div class="part-details">
+                                <h3 class="part-name">AMD Ryzen 9 5900X</h3>
+                                <p class="part-specs">12 Cores | 3.7 GHz | AM4 Socket</p>
+                                <p class="part-price">$569.04</p>
+                            </div>
+                        </div>
+                        <div class="button-container">
+                            <button class="add-to-cart">Add to Cart</button>
+                            <button class="buy-now">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </div>
+    
+    
+        <!-- ------------------------------------------- Graphics Cards Section  --------------------------------------------------- -->
+        <section id="graphics-section" class="graphics-container">
+            <div class="graphics-section">
+                <h2>Graphics Cards</h2>
+                <div class="graphics-layout">
+        
+                    <!-- Graphics Card 1 -->
+                    <div class="graphics-card" id="graphics1">
+                        <div class="graphics-card-inner">
+                            <div class="graphics-card-front">
+                                <img src="./image3/periphirals_new/1660ti.png" alt="NVIDIA GTX 4060 Ti">
+                                <h3 class="graphics-card-name">NVIDIA GTX 4060 Ti</h3>
+                            </div>
+                            <div class="graphics-card-back">
+                                <h3 class="graphics-card-name">GTX 4060 Ti</h3>
+                                <p class="graphics-card-specs">6GB GDDR6, Turing Architecture</p>
+                                <p class="graphics-card-price">$299.31</p>
+                                <div class="button-container">
+                                    <button class="add-to-cart">Add to Cart</button>
+                                    <button class="buy-now">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Graphics Card 2 -->
+                    <div class="graphics-card" id="graphics2">
+                        <div class="graphics-card-inner">
+                            <div class="graphics-card-front">
+                                <img src="./image3/periphirals_new/2070ti.png" alt="NVIDIA RTX 2070 Super">
+                                <h3 class="graphics-card-name">NVIDIA RTX 2070 Super</h3>
+                            </div>
+                            <div class="graphics-card-back">
+                                <h3 class="graphics-card-name">RTX 2070 Super</h3>
+                                <p class="graphics-card-specs">8GB GDDR6, 2nd Gen RT Cores</p>
+                                <p class="graphics-card-price">$499.88</p>
+                                <div class="button-container">
+                                    <button class="add-to-cart">Add to Cart</button>
+                                    <button class="buy-now">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Graphics Card 3 -->
+                    <div class="graphics-card" id="graphics3">
+                        <div class="graphics-card-inner">
+                            <div class="graphics-card-front">
+                                <img src="./image3/periphirals_new/1060 Gygabite..png" alt="NVIDIA GTX 1060">
+                                <h3 class="graphics-card-name">NVIDIA GTX 1060</h3>
+                            </div>
+                            <div class="graphics-card-back">
+                                <h3 class="graphics-card-name">GTX 1060</h3>
+                                <p class="graphics-card-specs">6GB GDDR5, Pascal Architecture</p>
+                                <p class="graphics-card-price">$199.87</p>
+                                <div class="button-container">
+                                    <button class="add-to-cart">Add to Cart</button>
+                                    <button class="buy-now">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Graphics Card 4 -->
+                    <div class="graphics-card" id="graphics4">
+                        <div class="graphics-card-inner">
+                            <div class="graphics-card-front">
+                                <img src="./image3/periphirals_new/4060.webp" alt="NVIDIA RTX 3050">
+                                <h3 class="graphics-card-name">NVIDIA RTX 3050</h3>
+                            </div>
+                            <div class="graphics-card-back">
+                                <h3 class="graphics-card-name">RTX 3050</h3>
+                                <p class="graphics-card-specs">8GB GDDR6, Ada Lovelace Architecture</p>
+                                <p class="graphics-card-price">$99.09</p>
+                                <div class="button-container">
+                                    <button class="add-to-cart">Add to Cart</button>
+                                    <button class="buy-now">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Graphics Card 5 -->
+                    <div class="graphics-card" id="graphics5">
+                        <div class="graphics-card-inner">
+                            <div class="graphics-card-front">
+                                <img src="./image3/periphirals_new/5070ti.webp" alt="NVIDIA RTX 5070 Ti">
+                                <h3 class="graphics-card-name">NVIDIA RTX 5070 Ti</h3>
+                            </div>
+                            <div class="graphics-card-back">
+                                <h3 class="graphics-card-name">RTX 5070 Ti</h3>
+                                <p class="graphics-card-specs">16GB GDDR6X, Next-Gen Architecture</p>
+                                <p class="graphics-card-price">$749.11</p>
+                                <div class="button-container">
+                                    <button class="add-to-cart">Add to Cart</button>
+                                    <button class="buy-now">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Graphics Card 6 -->
+                    <div class="graphics-card" id="graphics6">
+                        <div class="graphics-card-inner">
+                            <div class="graphics-card-front">
+                                <img src="./image3/periphirals_new/4060ti.webp" alt="NVIDIA RTX 4060 Ti">
+                                <h3 class="graphics-card-name">NVIDIA RTX 4060 Ti</h3>
+                            </div>
+                            <div class="graphics-card-back">
+                                <h3 class="graphics-card-name">RTX 4060 Ti</h3>
+                                <p class="graphics-card-specs">8GB GDDR6X, Ada Lovelace Architecture</p>
+                                <p class="graphics-card-price">$499.67</p>
+                                <div class="button-container">
+                                    <button class="add-to-cart">Add to Cart</button>
+                                    <button class="buy-now">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Graphics Card 7 -->
+                    <div class="graphics-card" id="graphics7">
+                        <div class="graphics-card-inner">
+                            <div class="graphics-card-front">
+                                <img src="./image3/periphirals_new/6700ti.png" alt="AMD Radeon RX 6700 XT">
+                                <h3 class="graphics-card-name">AMD Radeon RX 6700 XT</h3>
+                            </div>
+                            <div class="graphics-card-back">
+                                <h3 class="graphics-card-name">RX 6700 XT</h3>
+                                <p class="graphics-card-specs">12GB GDDR6, RDNA 2 Architecture</p>
+                                <p class="graphics-card-price">$479.22</p>
+                                <div class="button-container">
+                                    <button class="add-to-cart">Add to Cart</button>
+                                    <button class="buy-now">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </section>
+    
+    
+        <!-- ------------------------------------------- Motherboard Section  --------------------------------------------------- -->
+
+        <div class="parts-container">
+            <section id="motherboards" class="parts-section">
+                <h2>Motherboards</h2>
+                <div class="parts-grid">
+                    <!-- Motherboard 1 -->
+                    <div class="part-card" id="motherboard1">
+                        <img src="./image3/periphirals_new/Motherboard_1155_LGA.jpg" alt="LGA 1155 Motherboard" class="part-card-image">
+                        <div class="part-card-overlay">
+                            <div class="part-details-container">
+                                <div class="part-details">
+                                    <h3 class="part-name">LGA 1155 Motherboard</h3>
+                                    <p class="part-specs">Supports Intel 2nd & 3rd Gen | DDR3</p>
+                                    <p class="part-price">$89.35</p>
+                                </div>
+                            </div>
+                            <div class="button-container">
+                                <button class="add-to-cart">Add to Cart</button>
+                                <button class="buy-now">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Motherboard 2 -->
+                    <div class="part-card" id="motherboard2">
+                        <img src="./image3/periphirals_new/Motherboard_asus.webp" alt="ASUS ROG Z790" class="part-card-image">
+                        <div class="part-card-overlay">
+                            <div class="part-details-container">
+                                <div class="part-details">
+                                    <h3 class="part-name">ASUS ROG Z790</h3>
+                                    <p class="part-specs">LGA 1700 | DDR5 | PCIe 5.0</p>
+                                    <p class="part-price">$399.77</p>
+                                </div>
+                            </div>
+                            <div class="button-container">
+                                <button class="add-to-cart">Add to Cart</button>
+                                <button class="buy-now">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Motherboard 3 -->
+                    <div class="part-card" id="motherboard3">
+                        <img src="./image3/periphirals_new/Motherboard_B650.webp" alt="ASUS TUF B650-PLUS WIFI" class="part-card-image">
+                        <div class="part-card-overlay">
+                            <div class="part-details-container">
+                                <div class="part-details">
+                                    <h3 class="part-name">ASUS TUF B650-PLUS WIFI</h3>
+                                    <p class="part-specs">AM5 | DDR5 | PCIe 4.0</p>
+                                    <p class="part-price">$219.46</p>
+                                </div>
+                            </div>
+                            <div class="button-container">
+                                <button class="add-to-cart">Add to Cart</button>
+                                <button class="buy-now">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Motherboard 4 -->
+                    <div class="part-card" id="motherboard4">
+                        <img src="./image3/periphirals_new/Motherboard_B650E.jpg" alt="ROG STRIX B650E-F GAMING WIFI" class="part-card-image">
+                        <div class="part-card-overlay">
+                            <div class="part-details-container">
+                                <div class="part-details">
+                                    <h3 class="part-name">ROG STRIX B650E-F GAMING WIFI</h3>
+                                    <p class="part-specs">AM5 | DDR5 | PCIe 5.0</p>
+                                    <p class="part-price">$259.89</p>
+                                </div>
+                            </div>
+                            <div class="button-container">
+                                <button class="add-to-cart">Add to Cart</button>
+                                <button class="buy-now">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Motherboard 5 -->
+                    <div class="part-card" id="motherboard5">
+                        <img src="./image3/periphirals_new/Motherboard_B650M.jpg" alt="ASUS TUF B660M-PLUS" class="part-card-image">
+                        <div class="part-card-overlay">
+                            <div class="part-details-container">
+                                <div class="part-details">
+                                    <h3 class="part-name">ASUS TUF B660M-PLUS</h3>
+                                    <p class="part-specs">LGA 1700 | DDR4 | PCIe 4.0</p>
+                                    <p class="part-price">$159.94</p>
+                                </div>
+                            </div>
+                            <div class="button-container">
+                                <button class="add-to-cart">Add to Cart</button>
+                                <button class="buy-now">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Motherboard 6 -->
+                    <div class="part-card" id="motherboard6">
+                        <img src="./image3/periphirals_new/Motherboard_B760.jpg" alt="Gigabyte B760 DS3H AX" class="part-card-image">
+                        <div class="part-card-overlay">
+                            <div class="part-details-container">
+                                <div class="part-details">
+                                    <h3 class="part-name">Gigabyte B760 DS3H AX</h3>
+                                    <p class="part-specs">LGA 1700 | DDR4 | WiFi 6</p>
+                                    <p class="part-price">$139.96</p>
+                                </div>
+                            </div>
+                            <div class="button-container">
+                                <button class="add-to-cart">Add to Cart</button>
+                                <button class="buy-now">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Motherboard 7 -->
+                    <div class="part-card" id="motherboard7">
+                        <img src="./image3/periphirals_new/Motherboard_B860.jpg" alt="Gigabyte B860 DS3H" class="part-card-image">
+                        <div class="part-card-overlay">
+                            <div class="part-details-container">
+                                <div class="part-details">
+                                    <h3 class="part-name">Gigabyte B860 DS3H</h3>
+                                    <p class="part-specs">LGA 1700 | DDR5 | PCIe 4.0</p>
+                                    <p class="part-price">$149.78</p>
+                                </div>
+                            </div>
+                            <div class="button-container">
+                                <button class="add-to-cart">Add to Cart</button>
+                                <button class="buy-now">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Motherboard 8 -->
+                    <div class="part-card" id="motherboard8">
+                        <img src="./image3/periphirals_new/Motherboard_MSI.webp" alt="MSI Pro B760M-A WIFI" class="part-card-image">
+                        <div class="part-card-overlay">
+                            <div class="part-details-container">
+                                <div class="part-details">
+                                    <h3 class="part-name">MSI Pro B760M-A WIFI</h3>
+                                    <p class="part-specs">LGA 1700 | DDR5 | WiFi 6</p>
+                                    <p class="part-price">$169.76</p>
+                                </div>
+                            </div>
+                            <div class="button-container">
+                                <button class="add-to-cart">Add to Cart</button>
+                                <button class="buy-now">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Motherboard 9 -->
+                    <div class="part-card" id="motherboard9">
+                        <img src="./image3/periphirals_new/Motherboard_prime.jpg" alt="ASUS Prime Z690-A" class="part-card-image">
+                        <div class="part-card-overlay">
+                            <div class="part-details-container">
+                                <div class="part-details">
+                                    <h3 class="part-name">ASUS Prime Z690-A</h3>
+                                    <p class="part-specs">LGA 1700 | DDR5 | PCIe 5.0</p>
+                                    <p class="part-price">$239.55</p>
+                                </div>
+                            </div>
+                            <div class="button-container">
+                                <button class="add-to-cart">Add to Cart</button>
+                                <button class="buy-now">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+         <!-- --------------------------------------------Memory (RAM) Section------------------------------------------------------- -->
+         <!-- ------------------------------------------- Graphics Cards Section  --------------------------------------------------- -->
+         <section id="ram-section" class="graphics-container">
+            <div class="graphics-section">
+                <h2>RAM Cards</h2>
+                <div class="graphics-layout">
+        
+                    <!-- RAM Card 1 -->
+                    <div class="graphics-card" id="ram1">
+                        <div class="graphics-card-inner">
+                            <div class="graphics-card-front">
+                                <img src="./image3/periphirals_new/RAM_card_1.webp" alt="Corsair Vengeance DDR5">
+                                <h3 class="graphics-card-name">Corsair Vengeance DDR5</h3>
+                            </div>
+                            <div class="graphics-card-back">
+                                <h3 class="graphics-card-name">Corsair Vengeance DDR5</h3>
+                                <p class="graphics-card-specs">5600MHz | 16GB | CL36</p>
+                                <p class="graphics-card-price">$149.44</p>
+                                <div class="button-container">
+                                    <button class="add-to-cart">Add to Cart</button>
+                                    <button class="buy-now">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- RAM Card 2 -->
+                    <div class="graphics-card" id="ram2">
+                        <div class="graphics-card-inner">
+                            <div class="graphics-card-front">
+                                <img src="./image3/periphirals_new/RAM_card_2.png" alt="G.Skill Trident Z DDR5">
+                                <h3 class="graphics-card-name">G.Skill Trident Z DDR5</h3>
+                            </div>
+                            <div class="graphics-card-back">
+                                <h3 class="graphics-card-name">G.Skill Trident Z DDR5</h3>
+                                <p class="graphics-card-specs">6000MHz | 16GB | CL32</p>
+                                <p class="graphics-card-price">$179.99</p>
+                                <div class="button-container">
+                                    <button class="add-to-cart">Add to Cart</button>
+                                    <button class="buy-now">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- RAM Card 3 -->
+                    <div class="graphics-card" id="ram3">
+                        <div class="graphics-card-inner">
+                            <div class="graphics-card-front">
+                                <img src="./image3/periphirals_new/RAM_card_3.webp" alt="TeamGroup T-Force Delta RGB DDR5">
+                                <h3 class="graphics-card-name">TeamGroup T-Force Delta RGB DDR5</h3>
+                            </div>
+                            <div class="graphics-card-back">
+                                <h3 class="graphics-card-name">TeamGroup Delta RGB DDR5</h3>
+                                <p class="graphics-card-specs">6400MHz | 32GB | CL40</p>
+                                <p class="graphics-card-price">$279.99</p>
+                                <div class="button-container">
+                                    <button class="add-to-cart">Add to Cart</button>
+                                    <button class="buy-now">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- RAM Card 4 -->
+                    <div class="graphics-card" id="ram4">
+                        <div class="graphics-card-inner">
+                            <div class="graphics-card-front">
+                                <img src="./image3/periphirals_new/RAM_card_4.png" alt="Kingston Fury Beast DDR5">
+                                <h3 class="graphics-card-name">Kingston Fury Beast DDR5</h3>
+                            </div>
+                            <div class="graphics-card-back">
+                                <h3 class="graphics-card-name">Kingston Fury Beast DDR5</h3>
+                                <p class="graphics-card-specs">5600MHz | 16GB | CL36</p>
+                                <p class="graphics-card-price">$139.99</p>
+                                <div class="button-container">
+                                    <button class="add-to-cart">Add to Cart</button>
+                                    <button class="buy-now">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- RAM Card 5 -->
+                    <div class="graphics-card" id="ram5">
+                        <div class="graphics-card-inner">
+                            <div class="graphics-card-front">
+                                <img src="./image3/periphirals_new/RAM_card_5.webp" alt="Crucial Ballistix DDR4">
+                                <h3 class="graphics-card-name">Crucial Ballistix DDR4</h3>
+                            </div>
+                            <div class="graphics-card-back">
+                                <h3 class="graphics-card-name">Crucial Ballistix DDR4</h3>
+                                <p class="graphics-card-specs">3200MHz | 16GB | CL16</p>
+                                <p class="graphics-card-price">$79.99</p>
+                                <div class="button-container">
+                                    <button class="add-to-cart">Add to Cart</button>
+                                    <button class="buy-now">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- RAM Card 6 -->
+                    <div class="graphics-card" id="ram6">
+                        <div class="graphics-card-inner">
+                            <div class="graphics-card-front">
+                                <img src="./image3/periphirals_new/RAM_card_6.png" alt="G.Skill Ripjaws DDR4">
+                                <h3 class="graphics-card-name">G.Skill Ripjaws DDR4</h3>
+                            </div>
+                            <div class="graphics-card-back">
+                                <h3 class="graphics-card-name">G.Skill Ripjaws DDR4</h3>
+                                <p class="graphics-card-specs">3600MHz | 8GB | CL18</p>
+                                <p class="graphics-card-price">$49.99</p>
+                                <div class="button-container">
+                                    <button class="add-to-cart">Add to Cart</button>
+                                    <button class="buy-now">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- RAM Card 7 -->
+                    <div class="graphics-card" id="ram7">
+                        <div class="graphics-card-inner">
+                            <div class="graphics-card-front">
+                                <img src="./image3/periphirals_new/RAM_card_7.png" alt="ADATA XPG Spectrix D50 DDR4">
+                                <h3 class="graphics-card-name">ADATA XPG Spectrix D50 DDR4</h3>
+                            </div>
+                            <div class="graphics-card-back">
+                                <h3 class="graphics-card-name">ADATA XPG Spectrix D50 DDR4</h3>
+                                <p class="graphics-card-specs">3200MHz | 16GB | CL16</p>
+                                <p class="graphics-card-price">$89.99</p>
+                                <div class="button-container">
+                                    <button class="add-to-cart">Add to Cart</button>
+                                    <button class="buy-now">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- RAM Card 8 -->
+                    <div class="graphics-card" id="ram8">
+                        <div class="graphics-card-inner">
+                            <div class="graphics-card-front">
+                                <img src="./image3/periphirals_new/RAM_card_8.webp" alt="Kingston HyperX DDR3">
+                                <h3 class="graphics-card-name">Kingston HyperX DDR3</h3>
+                            </div>
+                            <div class="graphics-card-back">
+                                <h3 class="graphics-card-name">Kingston HyperX DDR3</h3>
+                                <p class="graphics-card-specs">1600MHz | 8GB | CL10</p>
+                                <p class="graphics-card-price">$39.99</p>
+                                <div class="button-container">
+                                    <button class="add-to-cart">Add to Cart</button>
+                                    <button class="buy-now">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </section>
+        
+        
+     <!-- ------------------------------------------- Storage Devices Section  --------------------------------------------------- -->
+        
+     <section id="storage-section" class="storage-container">
+        <div class="storage-section">
+            <h2>Storage Devices</h2>
+            <div class="storage-list">
+                <!-- Storage Item 1 -->
+                <div class="storage-item" id="storage1">
+                    <div class="storage-item-inner">
+                        <div class="storage-item-front">
+                            <img src="./image3/periphirals_new/storage_device_1.png" alt="Samsung 970 EVO Plus SSD" class="storage-image">
+                            <h3 class="storage-name">Samsung 970 EVO Plus SSD</h3>
+                            <p class="storage-details">1TB | NVMe | PCIe Gen 3.0</p>
+                        </div>
+                        <div class="storage-item-back">
+                            <p class="storage-price-back">$129.99</p>
+                            <div class="button-container">
+                                <button class="add-to-cart">Add to Cart</button>
+                                <button class="buy-now">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Storage Item 2 -->
+                <div class="storage-item" id="storage2">
+                    <div class="storage-item-inner">
+                        <div class="storage-item-front">
+                            <img src="./image3/periphirals_new/storage_device_2.png" alt="Western Digital Black HDD" class="storage-image">
+                            <h3 class="storage-name">Western Digital Black HDD</h3>
+                            <p class="storage-details">2TB | 7200RPM | SATA III</p>
+                        </div>
+                        <div class="storage-item-back">
+                            <p class="storage-price-back">$89.99</p>
+                            <div class="button-container">
+                                <button class="add-to-cart">Add to Cart</button>
+                                <button class="buy-now">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Storage Item 3 -->
+                <div class="storage-item" id="storage3">
+                    <div class="storage-item-inner">
+                        <div class="storage-item-front">
+                            <img src="./image3/periphirals_new/storage_device_4.webp" alt="Kingston Pendrive" class="storage-image">
+                            <h3 class="storage-name">Kingston Pendrive</h3>
+                            <p class="storage-details">128GB | Highspeed | PCIe Gen 2.0</p>
+                        </div>
+                        <div class="storage-item-back">
+                            <p class="storage-price-back">$69.99</p>
+                            <div class="button-container">
+                                <button class="add-to-cart">Add to Cart</button>
+                                <button class="buy-now">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Storage Item 4 -->
+                <div class="storage-item" id="storage4">
+                    <div class="storage-item-inner">
+                        <div class="storage-item-front">
+                            <img src="./image3/periphirals_new/storage_device_3.webp" alt="Seagate BarraCuda HDD" class="storage-image">
+                            <h3 class="storage-name">Seagate BarraCuda HDD</h3>
+                            <p class="storage-details">4TB | 5400RPM | SATA III</p>
+                        </div>
+                        <div class="storage-item-back">
+                            <p class="storage-price-back">$109.99</p>
+                            <div class="button-container">
+                                <button class="add-to-cart">Add to Cart</button>
+                                <button class="buy-now">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Storage Item 5 -->
+                <div class="storage-item" id="storage5">
+                    <div class="storage-item-inner">
+                        <div class="storage-item-front">
+                            <img src="./image3/periphirals_new/storage_device_10.png" alt="WD Blue 250GB SSD" class="storage-image">
+                            <h3 class="storage-name">WD Blue 250GB SSD</h3>
+                            <p class="storage-details">250GB | 3D NAND | SATA III</p>
+                        </div>
+                        <div class="storage-item-back">
+                            <p class="storage-price-back">$59.59</p>
+                            <div class="button-container">
+                                <button class="add-to-cart">Add to Cart</button>
+                                <button class="buy-now">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Storage Item 6 -->
+                <div class="storage-item" id="storage6">
+                    <div class="storage-item-inner">
+                        <div class="storage-item-front">
+                            <img src="./image3/periphirals_new/storage_device_6.png" alt="Kingston KC3000 NVMe SSD" class="storage-image">
+                            <h3 class="storage-name">Kingston KC3000 NVMe SSD</h3>
+                            <p class="storage-details">2TB | PCIe Gen 4 | Up to 7,000MB/s</p>
+                        </div>
+                        <div class="storage-item-back">
+                            <p class="storage-price-back">$239.99</p>
+                            <div class="button-container">
+                                <button class="add-to-cart">Add to Cart</button>
+                                <button class="buy-now">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Storage Item 7 -->
+                <div class="storage-item" id="storage7">
+                    <div class="storage-item-inner">
+                        <div class="storage-item-front">
+                            <img src="./image3/periphirals_new/storage_device_7.png" alt="Toshiba Canvio Basics HDD" class="storage-image">
+                            <h3 class="storage-name">Toshiba Canvio Basics HDD</h3>
+                            <p class="storage-details">1TB | USB 3.0 | Portable External Drive</p>
+                        </div>
+                        <div class="storage-item-back">
+                            <p class="storage-price-back">$5.90</p>
+                            <div class="button-container">
+                                <button class="add-to-cart" >Add to Cart</button>
+                                <button class="buy-now" >Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Storage Item 8 -->
+                <div class="storage-item" id="storage8">
+                    <div class="storage-item-inner">
+                        <div class="storage-item-front">
+                            <img src="./image3/periphirals_new/storage_device_8.png" alt="ADATA XPG SX8200 Pro SSD" class="storage-image">
+                            <h3 class="storage-name">ADATA XPG SX8200 Pro SSD</h3>
+                            <p class="storage-details">1TB | NVMe | PCIe Gen 3</p>
+                        </div>
+                        <div class="storage-item-back">
+                            <p class="storage-price-back">$99.99</p>
+                            <div class="button-container">
+                                <button class="add-to-cart">Add to Cart</button>
+                                <button class="buy-now">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Storage Item 9 -->
+                <div class="storage-item" id="storage9">
+                    <div class="storage-item-inner">
+                        <div class="storage-item-front">
+                            <img src="./image3/periphirals_new/storage_device_9.png" alt="Samsung T7 Portable SSD" class="storage-image">
+                            <h3 class="storage-name">Samsung T7 Portable SSD</h3>
+                            <p class="storage-details">2TB | USB-C | Portable SSD</p>
+                        </div>
+                        <div class="storage-item-back">
+                            <p class="storage-price-back">$299.99</p>
+                            <div class="button-container">
+                                <button class="add-to-cart">Add to Cart</button>
+                                <button class="buy-now">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+        </div>
+    </section>
+    
+    
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="./image/logo/logo.png" alt="Gaming Logo">
+                </div>
+                <div class="footer-links">
+                    <a href="404error.html">Terms & Policy</a>
+                    <a href="404error.html">Privacy Policy</a>
+                    <a href="404error.html">Cookie Policy</a>
+                    <a href="404error.html">Contact us</a>
+                </div>
+                <div class="social-links">
+                    <a href="404error.html" aria-label="Twitch">
+                        <i class="fab fa-twitch"></i>
+                    </a>
+                    <a href="404error.html" aria-label="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="404error.html" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="404error.html" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="404error.html" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © 2025 All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="./javascripts/header.js"></script>
+    <script src="./navbar.js"></script>
+    <script src="product.json"></script>
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - GameTone</title>
+    <link rel="stylesheet" href="./stylesheets/styles.css">
+    <link rel="stylesheet" href="./stylesheets/header.css">
+    <link rel="stylesheet" href="./stylesheets/footer.css">
+    <link rel="stylesheet" href="./stylesheets/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="./javascripts/navbar.js"></script>
+    <link rel="manifest" href="site.manifest">
+    <link rel="icon" type="image/png" href="./assest/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="./assest/favicon.svg">
+    <link rel="shortcut icon" href="./assest/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assest/apple-touch-icon.png">
+</head>
+<body>
+    <header>
+        <div class="header-main">
+            <div class="header-container">
+                <div class="logo">
+                    <img src="./image/logo/logo.png" alt="GameTone, The logo of the website">
+                </div>
+    
+                <nav class="main-nav">
+                    <div class="nav-left">
+                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="upcoming.html" class="nav-link">Upcoming</a>
+                        <div class="dropdown">
+                            <a class="nav-link">Accessories <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown-content">
+                                <a href="consoles.html">Gaming Consoles</a>
+                                <a href="periphals.html">Gaming Peripherals</a>
+                            </div>
+                        </div>
+                        <a href="games.html" class="nav-link">Games</a>
+                        <a href="f&q.html" class="nav-link">FAQs</a>
+                        <a href="about.html" class="nav-link">About Us/Contact</a>
+                    </div>
+    
+                    <div class="search-container">
+                        <input type="text" class="search-input" placeholder="Search..." aria-label="Search">
+                            <button class="search-btn" aria-label="Search">
+                                <i class="fas fa-search" aria-hidden="true"></i>
+                            </button>
+                    </div>
+                </nav>
+
+                <!-- Mobile search bar -->
+                <div class="mobile-search-container">
+                    <input type="text" class="search-input" placeholder="Search..." aria-label="Search">
+                    <button class="search-btn" aria-label="Search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+    
+                <div class="user-actions">
+                    <button class="cart-btn active" aria-label="View Cart">
+                        <i class="fas fa-shopping-cart" ></i>
+                    </button>
+                    <button class="user-btn" aria-label="User Profile">
+                        <i class="fas fa-user"></i>
+                    </button>
+                </div>
+    
+                <button class="hamburger-btn" aria-label="Open Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    
+        <!-- Mobile Navigation Menu -->
+        <div class="mobile-nav">
+            <button class="close-btn" aria-label="Close Menu">
+                <i class="fas fa-times"></i>
+            </button>
+            
+            <ul class="mobile-nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="upcoming.html">Upcoming</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="consoles.html">Consoles</a></li>
+                <li><a href="periphals.html">Gaming peripherals</a></li>
+                <li><a href="f&q.html">Q & A</a></li>
+                <li><a href="about.html">About/Contact Us</a></li>
+            </ul>
+
+            <div class="mobile-nav-actions">
+                <a href="cart.html" class="mobile-action-btn active" >
+                    <i class="fas fa-shopping-cart"></i>
+                    Shopping Cart
+                </a>
+                <a href="404error.html" class="mobile-action-btn">
+                    <i class="fas fa-user"></i>
+                    My Profile
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="cart-page">
+      <div class="container">
+        <h1 class="page-title">Shopping Cart</h1>
+        
+        <div class="cart-container">
+          <div class="cart-items">
+            <table class="cart-table">
+              <thead>
+                <tr>
+                  <th>IMAGE</th>
+                  <th>DETAILS</th>
+                  <th>PRICE</th>
+                  <th>QUANTITY</th>
+                  <th>TOTAL</th>
+                  <th>ACTIONS</th>
+                </tr>
+              </thead>
+              <tbody id="cart-items">
+                <!-- Items will be dynamically added here -->
+              </tbody>
+            </table>
+          </div>
+          
+          <div class="cart-summary">
+            <h2>Order Summary</h2>
+            <div class="summary-item">
+              <span>Subtotal (0 items)</span>
+              <span>$0.00</span>
+            </div>
+            <div class="summary-total">
+              <span>Total</span>
+              <span>$0.00</span>
+            </div>
+            <button class="checkout-btn" onclick="window.location.href='personal-info.html'">Proceed to Checkout</button>
+            
+            <div class="payment-methods">
+              <p>We Accept:</p>
+              <div class="payment-icons">
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-amex"></i>
+                <i class="fab fa-cc-paypal"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="container">
+        <div class="recommended-products">
+          <h2>You May Also Like</h2>
+          <div class="products-grid">
+            <div class="product-card">
+              <img src="./image/Homepage/games2.jpg" alt="Recommended Game">
+              <div class="product-info">
+                <h3>Ghost of Tsushima</h3>
+                <div class="price-tag">
+                  <span class="discount">-30%</span>
+                  <span class="final-price">$41.99</span>
+                </div>
+                <button class="add-to-cart-btn">Add to Cart</button>
+              </div>
+            </div>
+      
+            <div class="product-card">
+              <img src="./image/Homepage/games5.avif" alt="Recommended Game">
+              <div class="product-info">
+                <h3>Assassin's Creed Valhalla</h3>
+                <div class="price-tag">
+                  <span class="discount">-45%</span>
+                  <span class="final-price">$32.99</span>
+                </div>
+                <button class="add-to-cart-btn">Add to Cart</button>
+              </div>
+            </div>
+      
+            <div class="product-card">
+              <img src="./image/Homepage/games3.webp" alt="Recommended Game">
+              <div class="product-info">
+                <h3>The Last of Us Part II</h3>
+                <div class="price-tag">
+                  <span class="discount">-20%</span>
+                  <span class="final-price">$47.99</span>
+                </div>
+                <button class="add-to-cart-btn" >Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+      
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="./image/logo/logo.png" alt="Gaming Logo">
+                </div>
+                <div class="footer-links">
+                    <a href="404error.html">Terms & Policy</a>
+                    <a href="404error.html">Privacy Policy</a>
+                    <a href="404error.html">Cookie Policy</a>
+                    <a href="404error.html">Contact us</a>
+                </div>
+                <div class="social-links">
+                    <a href="404error.html" aria-label="Twitch">
+                        <i class="fab fa-twitch"></i>
+                    </a>
+                    <a href="404error.html" aria-label="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="404error.html" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="404error.html" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="404error.html" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © 2025 All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="./javascripts/header.js"></script>
+    <script src="./javascripts/cart.js"></script>
+    <script src="product.json"></script>
+</body>
+</html>

@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Store</title>
+    <link rel="stylesheet" href="./stylesheets/styles.css">
+    <link rel="stylesheet" href="./stylesheets/header.css">
+    <link rel="stylesheet" href="./stylesheets/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="./javascripts/navbar.js"></script>
+    <link rel="manifest" href="site.manifest">
+    <link rel="icon" type="image/png" href="./assest/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="./assest/favicon.svg">
+    <link rel="shortcut icon" href="./assest/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assest/apple-touch-icon.png">
+    <script src="./javascripts/cart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-main">
+            <div class="header-container">
+                <div class="logo">
+                    <img src="./image/logo/logo.png" alt="GameTone, The logo of the website">
+                </div>
+    
+                <nav class="main-nav">
+                    <div class="nav-left">
+                        <a href="index.html" class="nav-link active">Home</a>
+                        <a href="upcoming.html" class="nav-link">Upcoming</a>
+                        <div class="dropdown">
+                            <a class="nav-link">Accessories <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown-content">
+                                <a href="consoles.html">Gaming Consoles</a>
+                                <a href="periphals.html">Gaming Peripherals</a>
+                            </div>
+                        </div>
+                        <a href="games.html" class="nav-link">Games</a>
+                        <a href="f&q.html" class="nav-link">FAQs</a>
+                        <a href="about.html" class="nav-link">About Us/Contact</a>
+                    </div>
+    
+                    <div class="search-container">
+                        <input type="text" class="search-input" placeholder="Search..." aria-label="Search">
+                            <button class="search-btn" aria-label="Search">
+                                <i class="fas fa-search" aria-hidden="true"></i>
+                            </button>
+                    </div>
+                </nav>
+
+                <!-- Mobile search bar -->
+                <div class="mobile-search-container">
+                    <input type="text" class="search-input" placeholder="Search..." aria-label="Search">
+                    <button class="search-btn" aria-label="Search">
+                        <i class="fas fa-search"></i>
+                    </button>
+
+                </div>
+    
+                <div class="user-actions">
+                    <button class="cart-btn" aria-label="View Cart" onclick="location.href='cart.html';">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>                    
+                    <button class="user-btn" aria-label="User Profile">
+                        <i class="fas fa-user"></i>
+                    </button>
+                </div>
+    
+                <button class="hamburger-btn" aria-label="Open Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+            </div>
+        </div>
+    
+        <!-- Mobile Navigation Menu -->
+        <div class="mobile-nav">
+            <button class="close-btn" aria-label="Close Menu">
+                <i class="fas fa-times"></i>
+            </button>
+
+            
+            <ul class="mobile-nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="upcoming.html">Upcoming</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="consoles.html">Consoles</a></li>
+                <li><a href="periphals.html">Gaming peripherals</a></li>
+                <li><a href="f&q.html">Q & A</a></li>
+                <li><a href="about.html">About/Contact Us</a></li>
+            </ul>
+
+            <div class="mobile-nav-actions">
+                <a href="cart.html" class="mobile-action-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    Shopping Cart
+                </a>
+                <a href="404error.html" class="mobile-action-btn">
+                    <i class="fas fa-user"></i>
+                    My Profile
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <div class="hero-content">
+                <div class="tags">
+                    <span class="pre-order">Pre-order</span>
+                    <span class="time">In 18 days</span>
+                </div>
+                <h1>Pubg Pc Lite</h1>
+                <div class="price-info">
+                    <span class="discount">-49%</span>
+                    <span class="price">$4.68</span>
+                </div>
+                <div class="description">
+                    <p>GameTone offers a wide range of video games, consoles, accessories, and merchandise for all gamers. They provide the latest titles, exclusive deals, pre-orders, and trade-in options with competitive pricing, knowledgeable staff, and a vibrant shopping experience.</p>
+                </div>
+                <a href="404error.html" class="purchase-btn">Purchase Now</a>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-container">
+                <div class="welcome-box">
+                  <h1>Welcome to GameTone!</h1>
+                  <p>Let's Explore The World of Gaming Technology Together.</p>
+                  <a href="games.html" class="welcome-button">Get Started</a>
+                </div>
+              </div>
+        </section>
+
+        <section class="quick-links">
+            <div class="container">
+                <div>
+                    <a href="#game-collection" class="link-item">Game Collection →</a>
+                    <a href="#upcoming-games" class="link-item">Upcoming Games →</a>
+                    <a href="#console-releases" class="link-item">Explore the Latest Console Releases →</a>
+                    <a href="#pre-owned" class="link-item">Pre-Owned Deals →</a>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <!-- Gaming Culture -->
+        <section class="gaming-culture">
+            <div class="container flex-layout">
+                <div class="content-box">
+                    <h2>Gaming Culture & Community</h2>
+                    <p>The culture of gaming technology is a vibrant and ever-evolving landscape, driven by the passion and creativity of gamers and developers alike. From the early days of pixelated graphics and simple gameplay mechanics, the industry has grown into a multi-billion dollar behemoth, with cutting-edge graphics, immersive virtual reality experiences, and complex narratives that rival those of traditional media. The community aspect of gaming has also flourished, with online multiplayer games fostering social connections and esports turning competitive gaming into a global phenomenon.</p>
+                    <p>Through our dedication to gaming culture, we've built a thriving community where players can share experiences, discover new titles, and connect with fellow gaming enthusiasts.</p>
+                </div>
+                <div class="image-box">
+                    <img src="./image2/home_page/culture.jpeg" alt="Gaming Culture" class="section-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Gaming Tech -->
+        <section class="gaming-tech">
+            <div class="container flex-layout reverse">
+                <div class="content-box">
+                    <h2>Feel the Gaming Technology</h2>
+                    <p>Stay ahead of the game with our curated selection of cutting-edge gaming technology. From high-performance gaming PCs to the latest consoles, we ensure you have access to the best gaming hardware available.</p>
+                    <p>Our expert staff regularly tests and reviews new gaming technology to provide you with informed recommendations and insights into the latest gaming innovations.</p>
+                </div>
+                <div class="image-box">
+                    <img src="./image2/home_page/tech.jpeg" alt="Gaming Technology" class="section-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Customer Service -->
+        <section class="customer-service">
+            <div class="container flex-layout">
+                <div class="content-box">
+                    <h2>Best Customer Service</h2>
+                    <p>At GameTone, customer satisfaction is our top priority. Our knowledgeable staff is always ready to assist you with game recommendations, technical support, and gaming advice.</p>
+                    <p>We pride ourselves on creating a welcoming environment where both newcomers and veteran gamers can find exactly what they're looking for.</p>
+                    <p>At our shop, we are committed to providing the best for our customers. We carefully curate our products to ensure they meet the highest standards of quality and innovation. Whether you're a gaming enthusiast looking for the latest technology or a casual player seeking reliable gear, we've got you covered. Our knowledgeable staff is always on hand to help you find the perfect item, and we take pride in offering exceptional customer service that makes every visit a memorable one.</p>
+                    
+                    <h3>Why Choose GameTone:</h3>
+                    <ul class="features-list">
+                        <li>Best staff in the worlds</li>
+                        <li>Price match guarantee on all products</li>
+                        <li>Exclusive member rewards </li>
+                        <li>Regular gaming events and tournaments</li>
+                        <li>Early access to new releases</li>
+                    </ul>
+                </div>
+                <div class="image-box">
+                    <img src="./image2/home_page/services.jpeg" alt="Customer Service" class="section-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Updated Game Collection Section -->
+<!-- Updated Game Collection Section -->
+<section id="game-collection" class="game-collection">
+    <div class="container">
+        <h2>Game Collection</h2>
+        <div class="collection-grid">
+            <div class="collection-card game-item">
+                <img src="./image/Homepage/games1.jpg" alt="Game 1">
+                <div class="game-item-overlay">
+                    <div class="card-text">Mass Effect 2</div>
+                    <button class="add-to-cart-btn" data-id="game1" data-name="Mass Effect 2" data-price="19.99">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+            <div class="collection-card game-item">
+                <img src="./image/Homepage/games2.jpg" alt="Game 2">
+                <div class="game-item-overlay">
+                    <div class="card-text">Asphalt 9</div>
+                    <button class="add-to-cart-btn" data-id="game2" data-name="Asphalt 9" data-price="14.99">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+            <div class="collection-card game-item">
+                <img src="./image/Homepage/games3.webp" alt="Game 3">
+                <div class="game-item-overlay">
+                    <div class="card-text">Baldur's Gate 3</div>
+                    <button class="add-to-cart-btn" data-id="game3" data-name="Baldur's Gate 3" data-price="24.99">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+        <button class="see-more" onclick="location.href='games.html';">See More</button>
+    </div>
+</section>
+
+
+<!-- Updated Upcoming Games Section -->
+<section id="upcoming-games" class="upcoming-games">
+    <div class="container">
+        <h2>Upcoming Games</h2>
+        <div class="games-grid">
+            <div class="game-card game-item">
+                <img src="./image/Homepage/games4.jpg" alt="Upcoming Game 1">
+                <div class="game-item-overlay">
+                    <div class="card-text">Call of Duty: Warzone</div>
+                    <button class="add-to-cart-btn" data-id="upcoming1" data-name="Call of Duty: Warzone" data-price="29.99">
+                        Pre-order
+                    </button>
+                </div>
+            </div>
+            <div class="game-card game-item">
+                <img src="./image/Homepage/games5.avif" alt="Upcoming Game 2">
+                <div class="game-item-overlay">
+                    <div class="card-text">Black Myth: Wukong</div>
+                    <button class="add-to-cart-btn" data-id="upcoming2" data-name="Black Myth: Wukong" data-price="34.99">
+                        Pre-order
+                    </button>
+                </div>
+            </div>
+            <div class="game-card game-item">
+                <img src="./image/Homepage/games6.jpg" alt="Upcoming Game 3">
+                <div class="game-item-overlay">
+                    <div class="card-text">Need for Speed: No Limits</div>
+                    <button class="add-to-cart-btn" data-id="upcoming3" data-name="Need for Speed: No Limits" data-price="19.99">
+                        Pre-order
+                    </button>
+                </div>
+            </div>
+        </div>
+        <button class="see-more" onclick="location.href='games.html';">See More</button>
+    </div>
+</section>
+
+        
+        <section id="console-releases" class="console-releases">
+            <div class="container">
+                <h2>Explore the Latest Console Releases</h2>
+                <div class="console-grid">
+                    <div class="console-card">
+                        <a href="404error.html">
+                            <img src="./image/Homepage/playstation.jpg" alt="PlayStation">
+                            <div class="card-text">PlayStation</div>
+                        </a>
+                    </div>
+                    <div class="console-card">
+                        <a href="404error.html">
+                            <img src="./image/Homepage/xbox.jpg" alt="Xbox">
+                            <div class="card-text">Xbox</div>
+                        </a>
+                    </div>
+                    <div class="console-card">
+                        <a href="404error.html">
+                            <img src="./image/Homepage/steamdeck.jpg" alt="Steam Deck">
+                            <div class="card-text">Steam Deck</div>
+                        </a>
+                    </div>
+                    <div class="console-card">
+                        <a href="404error.html">
+                            <img src="./image/Homepage/ninetendo.avif" alt="Nintendo">
+                            <div class="card-text">Nintendo</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="pre-owned" class="pre-owned">
+            <div class="container">
+                <h2>Pre-Owned Deals</h2>
+                <div class="deals-grid">
+                    <div class="deal-card large">
+                        <a href="404error.html">
+                            <img src="./image/Homepage/deals/deals1.jpg" alt="Pre-Owned 1">
+                            <div class="deal-info">
+                                <div class="card-text">Far Cry 5</div>
+                                <div class="price-tag">
+                                    <span class="discount">-40%</span>
+                                    <span class="original-price">$49.99</span>
+                                    <span class="final-price">$29.99</span>
+                                    <button class="add-to-cart-btn" data-id="1" data-name="Latest Releases" data-price="19.99">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="deal-card large">
+                        <a href="404error.html">
+                            <img src="./image/Homepage/deals/deals2.jpg" alt="Pre-Owned 2">
+                            <div class="deal-info">
+                                <div class="card-text">Ghost of Tsushima</div>
+                                <div class="price-tag">
+                                    <span class="discount">-35%</span>
+                                    <span class="original-price">$59.99</span>
+                                    <span class="final-price">$38.99</span>
+                                </div>
+                                <button class="add-to-cart-btn" data-id="1" data-name="Latest Releases" data-price="19.99">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="deal-card small">
+                        <a href="404error.html">
+                            <img src="./image/Homepage/deals/deals3.webp" alt="Pre-Owned 3">
+                            <div class="deal-info">
+                                <div class="card-text">Call Of Duty MW-4</div>
+                                <div class="price-tag">
+                                    <span class="discount">-90%</span>
+                                    <span class="original-price">$39.99</span>
+                                    <span class="final-price">$3.50</span>
+                                    <button class="add-to-cart-btn" data-id="2" data-name="Latest Releases" data-price="19.99">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="deal-card small">
+                        <a href="404error.html">
+                            <img src="./image/Homepage/deals/deals4.jpg" alt="Pre-Owned 4">
+                            <div class="deal-info">
+                                <div class="card-text">GTA 4</div>
+                                <div class="price-tag">
+                                    <span class="discount">-45%</span>
+                                    <span class="original-price">$44.99</span>
+                                    <span class="final-price">$19.99</span>
+                                    <button class="add-to-cart-btn" data-id="3" data-name="Latest Releases" data-price="19.99">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="deal-card small">
+                        <a href="404error.html">
+                            <img src="./image/Homepage/deals/deals5.jpg" alt="Pre-Owned 5">
+                            <div class="deal-info">
+                                <div class="card-text">Resident Evil</div>
+                                <div class="price-tag">
+                                    <span class="discount">-99%</span>
+                                    <span class="original-price">$49.99</span>
+                                    <span class="final-price">$0.09</span>
+                                    <button class="add-to-cart-btn" data-id="4" data-name="Latest Releases" data-price="19.99">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>     
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="./image/logo/logo.png" alt="Gaming Logo">
+                </div>
+                <div class="footer-links">
+                    <a href="404error.html">Terms & Policy</a>
+                    <a href="404error.html">Privacy Policy</a>
+                    <a href="404error.html">Cookie Policy</a>
+                    <a href="404error.html">Contact us</a>
+                </div>
+                <div class="social-links">
+                    <a href="404error.html" aria-label="Twitch">
+                        <i class="fab fa-twitch"></i>
+                    </a>
+                    <a href="404error.html" aria-label="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="404error.html" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="404error.html" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="404error.html" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © 2025 All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="./javascripts/header.js"></script>
+    <script src="./navbar.js"></script>
+    <script src="product.json"></script>
+</body>
+</html>

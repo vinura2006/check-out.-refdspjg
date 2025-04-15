@@ -1,0 +1,93 @@
+[
+    {
+        "section": "Game Collection",
+        "games": [
+            {
+                "id": "game1",
+                "name": "Mass Effect 2",
+                "price": 19.99,
+                "image": "./image/Homepage/games1.jpg"
+            },
+            {
+                "id": "game2",
+                "name": "Asphalt 9",
+                "price": 14.99,
+                "image": "./image/Homepage/games2.jpg"
+            },
+            {
+                "id": "game3",
+                "name": "Baldur's Gate 3",
+                "price": 24.99,
+                "image": "./image/Homepage/games3.webp"
+            }
+        ]
+    },
+    {
+        "section": "Upcoming Games",
+        "games": [
+            {
+                "id": "upcoming1",
+                "name": "Call of Duty: Warzone",
+                "price": 29.99,
+                "image": "./image/Homepage/games4.jpg"
+            },
+            {
+                "id": "upcoming2",
+                "name": "Black Myth: Wukong",
+                "price": 34.99,
+                "image": "./image/Homepage/games5.avif"
+            },
+            {
+                "id": "upcoming3",
+                "name": "Need for Speed: No Limits",
+                "price": 19.99,
+                "image": "./image/Homepage/games6.jpg"
+            }
+        ]
+    },
+    {
+        "section": "Pre-Owned Deals",
+        "deals": [
+            {
+                "id": "deal1",
+                "name": "Far Cry 5",
+                "originalPrice": 49.99,
+                "finalPrice": 29.99,
+                "discount": "-40%",
+                "image": "./image/Homepage/deals/deals1.jpg"
+            },
+            {
+                "id": "deal2",
+                "name": "Ghost of Tsushima",
+                "originalPrice": 59.99,
+                "finalPrice": 38.99,
+                "discount": "-35%",
+                "image": "./image/Homepage/deals/deals2.jpg"
+            },
+            {
+                "id": "deal3",
+                "name": "Call Of Duty MW-4",
+                "originalPrice": 39.99,
+                "finalPrice": 3.50,
+                "discount": "-90%",
+                "image": "./image/Homepage/deals/deals3.webp"
+            },
+            {
+                "id": "deal4",
+                "name": "GTA 4",
+                "originalPrice": 44.99,
+                "finalPrice": 19.99,
+                "discount": "-45%",
+                "image": "./image/Homepage/deals/deals4.jpg"
+            },
+            {
+                "id": "deal5",
+                "name": "Resident Evil",
+                "originalPrice": 49.99,
+                "finalPrice": 0.09,
+                "discount": "-99%",
+                "image": "./image/Homepage/deals/deals5.jpg"
+            }
+        ]
+    }
+]

@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Store</title>
+    <link rel="stylesheet" href="./stylesheets/games.css">
+    <link rel="stylesheet" href="./stylesheets/header.css">
+    <link rel="stylesheet" href="./stylesheets/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="./javascripts/navbar.js"></script>
+    <script src="./javascripts/script.js"></script>
+    <link rel="manifest" href="site.manifest">
+    <link rel="icon" type="image/png" href="./assest/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="./assest/favicon.svg">
+    <link rel="shortcut icon" href="./assest/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assest/apple-touch-icon.png">
+</head>
+<body>
+  <header>
+    <div class="header-main">
+        <div class="header-container">
+            <div class="logo">
+                <img src="./image/logo/logo.png" alt="GameTone, The logo of the website">
+            </div>
+
+            <nav class="main-nav">
+                <div class="nav-left">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="upcoming.html" class="nav-link">Upcoming</a>
+                    <div class="dropdown">
+                        <a class="nav-link">Accessories <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="consoles.html">Gaming Consoles</a>
+                            <a href="periphals.html">Gaming Peripherals</a>
+                        </div>
+                    </div>
+                    <a href="games.html" class="nav-link active">Games</a>
+                    <a href="f&q.html" class="nav-link">FAQs</a>
+                    <a href="about.html" class="nav-link">About Us/Contact</a>
+                </div>
+
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Search..." aria-label="Search">
+                        <button class="search-btn" aria-label="Search">
+                            <i class="fas fa-search" aria-hidden="true"></i>
+                        </button>
+                </div>
+            </nav>
+
+            <!-- Mobile search bar -->
+            <div class="mobile-search-container">
+                <input type="text" class="search-input" placeholder="Search..." aria-label="Search">
+                <button class="search-btn" aria-label="Search">
+                    <i class="fas fa-search"></i>
+                </button>
+
+            </div>
+
+            <div class="user-actions">
+                <button class="cart-btn" aria-label="View Cart">
+                    <i class="fas fa-shopping-cart"></i>
+                </button>
+                <button class="user-btn" aria-label="User Profile">
+                    <i class="fas fa-user"></i>
+                </button>
+            </div>
+
+            <button class="hamburger-btn" aria-label="Open Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+
+        </div>
+    </div>
+
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-nav">
+        <button class="close-btn" aria-label="Close Menu">
+            <i class="fas fa-times"></i>
+        </button>
+
+        
+        <ul class="mobile-nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="upcoming.html">Upcoming</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="consoles.html">Consoles</a></li>
+            <li><a href="periphals.html">Gaming peripherals</a></li>
+            <li><a href="f&q.html">Q & A</a></li>
+            <li><a href="about.html">About/Contact Us</a></li>
+        </ul>
+
+        <div class="mobile-nav-actions">
+            <a href="404error.html" class="mobile-action-btn">
+                <i class="fas fa-shopping-cart"></i>
+                Shopping Cart
+            </a>
+            <a href="404error.html" class="mobile-action-btn">
+                <i class="fas fa-user"></i>
+                My Profile
+            </a>
+        </div>
+    </div>
+</header>
+        <!-- Main part -->
+<main class="main-content">
+  <!-- Top Rated Games -->
+  <div class="games-container">
+    <section id="games-section" class="games-section">
+        <h2>Games Collection</h2>
+        <div class="games-grid">
+            <!-- Game 1 -->
+            <div class="game-card part-card" id="game1">
+                <img src="./image/games/gameportrait8.jpeg" alt="Out of Laws" class="game-card-image">
+                <div class="game-card-overlay">
+                    <div class="game-details-container">
+                        <div class="game-details">
+                            <h3 class="part-name">Out of Laws</h3>
+                            <p class="game-specs">Windows, Xbox, Playstation | 54GB</p>
+                            <p class="part-price">$1.99</p>
+                        </div>
+                    </div>
+                    <div class="button-container">
+                      <button class="add-to-cart" data-id="game1" data-name="Out of Laws" data-price="1.99">Add to Cart</button>
+                      <button class="buy-now" data-id="game1" data-name="Out of Laws" data-price="1.99">Buy Now</button>
+                  </div>
+                </div>
+            </div>
+
+            <!-- Game 2 -->
+            <div class="game-card part-card" id="game2">
+                <img src="./image/games/gameportrait1.jpeg" alt="Blade" class="game-card-image">
+                <div class="game-card-overlay">
+                    <div class="game-details-container">
+                        <div class="game-details">
+                            <h3 class="part-name">Blade</h3>
+                            <p class="game-specs">Xbox, Playstation | 19GB</p>
+                            <p class="part-price">$5.99</p>
+                        </div>
+                    </div>
+                    <div class="button-container">
+                      <button class="add-to-cart" data-id="game1" data-name="Out of Laws" data-price="1.99">Add to Cart</button>
+                      <button class="buy-now" data-id="game1" data-name="Out of Laws" data-price="1.99">Buy Now</button>
+                  </div>
+                </div>
+            </div>
+
+            <!-- Game 3 -->
+            <div class="game-card part-card" id="game3">
+                <img src="./image/games/gameportrait2.jpeg" alt="Assisan Creed" class="game-card-image">
+                <div class="game-card-overlay">
+                    <div class="game-details-container">
+                        <div class="game-details">
+                            <h3 class="part-name">Assisan Creed</h3>
+                            <p class="game-specs">Windows, Xbox, Playstation | 69GB</p>
+                            <p class="part-price">$12.09</p>
+                        </div>
+                    </div>
+                    <div class="button-container">
+                      <button class="add-to-cart" data-id="game1" data-name="Out of Laws" data-price="1.99">Add to Cart</button>
+                      <button class="buy-now" data-id="game1" data-name="Out of Laws" data-price="1.99">Buy Now</button>
+                  </div>
+                </div>
+            </div>
+
+            <!-- Game 4 -->
+            <div class="game-card part-card" id="game4">
+                <img src="./image/games/gameportrait3.jpeg" alt="Sonic Shadow" class="game-card-image">
+                <div class="game-card-overlay">
+                    <div class="game-details-container">
+                        <div class="game-details">
+                            <h3 class="part-name">Sonic Shadow</h3>
+                            <p class="game-specs">Xbox, Playstation | 7GB</p>
+                            <p class="part-price">$15.96</p>
+                        </div>
+                    </div>
+                    <div class="button-container">
+                      <button class="add-to-cart" data-id="game1" data-name="Out of Laws" data-price="1.99">Add to Cart</button>
+                      <button class="buy-now" data-id="game1" data-name="Out of Laws" data-price="1.99">Buy Now</button>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="recommended-games-container">
+  <section id="recommended-games" class="games-section">
+      <h2>Recommended Games</h2>
+      <div class="games-grid">
+          <!-- Game 1 -->
+          <div class="game-card part-card" id="game5">
+              <img src="./image/games/gameportrait10.webp" alt="Fateh" class="game-card-image">
+              <div class="game-card-overlay">
+                  <div class="game-details-container">
+                      <div class="game-details">
+                          <h3 class="part-name">Fateh</h3>
+                          <p class="game-specs">Windows | 9GB</p>
+                          <p class="part-price">$8.67</p>
+                      </div>
+                  </div>
+                  <div class="button-container">
+                    <button class="add-to-cart" data-id="game1" data-name="Out of Laws" data-price="1.99">Add to Cart</button>
+                    <button class="buy-now" data-id="game1" data-name="Out of Laws" data-price="1.99">Buy Now</button>
+                </div>
+              </div>
+          </div>
+
+          <!-- Game 2 -->
+          <div class="game-card part-card" id="game6">
+              <img src="./image/games/gameportrait11.jpeg" alt="Octapath" class="game-card-image">
+              <div class="game-card-overlay">
+                  <div class="game-details-container">
+                      <div class="game-details">
+                          <h3 class="part-name">Octapath</h3>
+                          <p class="game-specs">Windows, Xbox, Playstation | 19GB</p>
+                          <p class="part-price">$4.39</p>
+                      </div>
+                  </div>
+                  <div class="button-container">
+                    <button class="add-to-cart" data-id="game1" data-name="Out of Laws" data-price="1.99">Add to Cart</button>
+                    <button class="buy-now" data-id="game1" data-name="Out of Laws" data-price="1.99">Buy Now</button>
+                </div>
+              </div>
+          </div>
+
+          <!-- Game 3 -->
+          <div class="game-card part-card" id="game7">
+              <img src="./image/games/gameportrait12.webp" alt="Paladings" class="game-card-image">
+              <div class="game-card-overlay">
+                  <div class="game-details-container">
+                      <div class="game-details">
+                          <h3 class="part-name">Paladings</h3>
+                          <p class="game-specs">Windows, Playstation | 21GB</p>
+                          <p class="part-price">$100.99</p>
+                      </div>
+                  </div>
+                  <div class="button-container">
+                    <button class="add-to-cart" data-id="game1" data-name="Out of Laws" data-price="1.99">Add to Cart</button>
+                    <button class="buy-now" data-id="game1" data-name="Out of Laws" data-price="1.99">Buy Now</button>
+                </div>
+              </div>
+          </div>
+
+          <!-- Game 4 -->
+          <div class="game-card part-card" id="game8">
+              <img src="./image/games/gameportrait13.jpg" alt="Apex Legends" class="game-card-image">
+              <div class="game-card-overlay">
+                  <div class="game-details-container">
+                      <div class="game-details">
+                          <h3 class="part-name">Apex Legends</h3>
+                          <p class="game-specs">Windows, Xbox, Mobile | 14GB</p>
+                          <p class="part-price">$60.12</p>
+                      </div>
+                  </div>
+                  <div class="button-container">
+                    <button class="add-to-cart" data-id="game1" data-name="Out of Laws" data-price="1.99">Add to Cart</button>
+                    <button class="buy-now" data-id="game1" data-name="Out of Laws" data-price="1.99">Buy Now</button>
+                </div>
+              </div>
+          </div>
+      </div>
+  </section>
+</div>
+
+<div class="special-deals-container">
+    <section id="special-deals" class="games-section">
+        <h2>Special Deals</h2>
+        <div class="games-grid">
+            <!-- Game 1 -->
+            <div class="game-card part-card" id="game9">
+                <img src="./image/games/gameportrait14.webp" alt="Left to Survive" class="game-card-image">
+                <div class="game-card-overlay">
+                    <div class="game-details-container">
+                        <div class="game-details">
+                            <h3 class="part-name">Left to Survive</h3>
+                            <p class="game-specs">Windows, Xbox, Playstation | 10GB</p>
+                            <p class="part-price">$25</p>
+                        </div>
+                    </div>
+                    <div class="button-container">
+                      <button class="add-to-cart" data-id="game1" data-name="Out of Laws" data-price="1.99">Add to Cart</button>
+                      <button class="buy-now" data-id="game1" data-name="Out of Laws" data-price="1.99">Buy Now</button>
+                  </div>
+                </div>
+            </div>
+
+            <!-- Game 2 -->
+            <div class="game-card part-card" id="game10">
+                <img src="./image/games/gameportrait15.jpg" alt="Ghost Recon" class="game-card-image">
+                <div class="game-card-overlay">
+                    <div class="game-details-container">
+                        <div class="game-details">
+                            <h3 class="part-name">Ghost Recon</h3>
+                            <p class="game-specs">Xbox, Playstation | 17GB</p>
+                            <p class="part-price">$5</p>
+                        </div>
+                    </div>
+                    <div class="button-container">
+                      <button class="add-to-cart" data-id="game1" data-name="Out of Laws" data-price="1.99">Add to Cart</button>
+                      <button class="buy-now" data-id="game1" data-name="Out of Laws" data-price="1.99">Buy Now</button>
+                  </div>
+                </div>
+            </div>
+
+            <!-- Game 3 -->
+            <div class="game-card part-card" id="game11">
+                <img src="./image/games/gameportrait16.png" alt="Fortnight" class="game-card-image">
+                <div class="game-card-overlay">
+                    <div class="game-details-container">
+                        <div class="game-details">
+                            <h3 class="part-name">Fortnight</h3>
+                            <p class="game-specs">Windows | 6GB</p>
+                            <p class="part-price">$1.99</p>
+                        </div>
+                    </div>
+                    <div class="button-container">
+                      <button class="add-to-cart" data-id="game1" data-name="Out of Laws" data-price="1.99">Add to Cart</button>
+                      <button class="buy-now" data-id="game1" data-name="Out of Laws" data-price="1.99">Buy Now</button>
+                  </div>
+                </div>
+            </div>
+
+            <!-- Game 4 -->
+            <div class="game-card part-card" id="game12">
+                <img src="./image/games/gameportrait17.jpg" alt="God of War" class="game-card-image">
+                <div class="game-card-overlay">
+                    <div class="game-details-container">
+                        <div class="game-details">
+                            <h3 class="part-name">God of War</h3>
+                            <p class="game-specs">Windows, Xbox, Playstation | 68GB</p>
+                            <p class="part-price">$15</p>
+                        </div>
+                    </div>
+                    <div class="button-container">
+                      <button class="add-to-cart" data-id="game1" data-name="Out of Laws" data-price="1.99">Add to Cart</button>
+                      <button class="buy-now" data-id="game1" data-name="Out of Laws" data-price="1.99">Buy Now</button>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+<div class="favorites-games-container">
+  <section id="favorites-games" class="games-section">
+      <h2>All-Time Favorites</h2>
+      <div class="games-grid">
+          <!-- Game 1 -->
+          <div class="game-card part-card" id="game17">
+              <img src="./image/games/gameportrait18.jpg" alt="Sniper Ghost Warrior" class="game-card-image">
+              <div class="game-card-overlay">
+                  <div class="game-details-container">
+                      <div class="game-details">
+                          <h3 class="part-name">Sniper Ghost Warrior</h3>
+                          <p class="game-specs">Windows, Xbox, Playstation | 10GB</p>
+                          <p class="part-price">$25</p>
+                      </div>
+                  </div>
+                  <div class="button-container">
+                    <button class="add-to-cart" data-id="game1" data-name="Out of Laws" data-price="1.99">Add to Cart</button>
+                    <button class="buy-now" data-id="game1" data-name="Out of Laws" data-price="1.99">Buy Now</button>
+                </div>
+              </div>
+          </div>
+
+          <!-- Game 2 -->
+          <div class="game-card part-card" id="game18">
+              <img src="./image/games/gameportrait19.jpg" alt="Asphalt 9: Legends" class="game-card-image">
+              <div class="game-card-overlay">
+                  <div class="game-details-container">
+                      <div class="game-details">
+                          <h3 class="part-name">Asphalt 9: Legends</h3>
+                          <p class="game-specs">Mobile | 10GB</p>
+                          <p class="part-price">$25</p>
+                      </div>
+                  </div>
+                  <div class="button-container">
+                    <button class="add-to-cart" data-id="game1" data-name="Out of Laws" data-price="1.99">Add to Cart</button>
+                    <button class="buy-now" data-id="game1" data-name="Out of Laws" data-price="1.99">Buy Now</button>
+                </div>
+              </div>
+          </div>
+
+          <!-- Game 3 -->
+          <div class="game-card part-card" id="game19">
+              <img src="./image/games/gameportrait3.jpeg" alt="Mirror's Edge" class="game-card-image">
+              <div class="game-card-overlay">
+                  <div class="game-details-container">
+                      <div class="game-details">
+                          <h3 class="part-name">Mirror's Edge</h3>
+                          <p class="game-specs">Windows, Xbox, Playstation | 7GB</p>
+                          <p class="part-price">$0.99</p>
+                      </div>
+                  </div>
+                  <div class="button-container">
+                    <button class="add-to-cart" data-id="game1" data-name="Out of Laws" data-price="1.99">Add to Cart</button>
+                    <button class="buy-now" data-id="game1" data-name="Out of Laws" data-price="1.99">Buy Now</button>
+                </div>
+              </div>
+          </div>
+
+          <!-- Game 4 -->
+          <div class="game-card part-card" id="game20">
+              <img src="./image/games/gameportrait4.webp" alt="Mafia Definitive" class="game-card-image">
+              <div class="game-card-overlay">
+                  <div class="game-details-container">
+                      <div class="game-details">
+                          <h3 class="part-name">Mafia Definitive</h3>
+                          <p class="game-specs">Windows | 43GB</p>
+                          <p class="part-price">$8</p>
+                      </div>
+                  </div>
+                  <div class="button-container">
+                    <button class="add-to-cart" data-id="game1" data-name="Out of Laws" data-price="1.99">Add to Cart</button>
+                    <button class="buy-now" data-id="game1" data-name="Out of Laws" data-price="1.99">Buy Now</button>
+                </div>
+              </div>
+          </div>
+      </div>
+  </section>
+</div>
+
+<!-- Trending container -->
+<div class="trending-wrapper">
+  <section id="trending-games" class="games-section">
+    <div class="trending-header">
+      <h2>Trending Games</h2>
+      <div class="slider-controls">
+        <button class="prev">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <button class="next">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="trending-slider">
+      <div class="trending-grid">
+        <!-- Game 1 -->
+        <div class="game-card part-card" id="game13">
+          <img src="./image/games/gameportrait.jpeg" alt="Outlast" class="game-card-image">
+          <div class="game-card-overlay">
+            <div class="game-details-container">
+              <div class="game-details">
+                <h3 class="part-name">Outlast</h3>
+                <p class="game-specs">Windows, Playstation | 17GB</p>
+                <p class="part-price">$5</p>
+              </div>
+            </div>
+            <div class="button-container">
+              <button class="add-to-cart" data-id="game1" data-name="Out of Laws" data-price="1.99">Add to Cart</button>
+              <button class="buy-now" data-id="game1" data-name="Out of Laws" data-price="1.99">Buy Now</button>
+          </div>
+          </div>
+        </div>
+
+        <!-- Game 2 -->
+        <div class="game-card part-card" id="game14">
+          <img src="./image/games/gameportrait1.jpeg" alt="FIFA 23" class="game-card-image">
+          <div class="game-card-overlay">
+            <div class="game-details-container">
+              <div class="game-details">
+                <h3 class="part-name">FIFA 23</h3>
+                <p class="game-specs">Xbox, Playstation | 93GB</p>
+                <p class="part-price">$29.99</p>
+              </div>
+            </div>
+            <div class="button-container">
+              <button class="add-to-cart" data-id="game1" data-name="Out of Laws" data-price="1.99">Add to Cart</button>
+              <button class="buy-now" data-id="game1" data-name="Out of Laws" data-price="1.99">Buy Now</button>
+          </div>
+          </div>
+        </div>
+
+        <!-- Game 3 -->
+        <div class="game-card part-card" id="game15">
+          <img src="./image/games/gameportrait2.jpeg" alt="Ghost of Tsushima" class="game-card-image">
+          <div class="game-card-overlay">
+            <div class="game-details-container">
+              <div class="game-details">
+                <h3 class="part-name">Ghost of Tsushima</h3>
+                <p class="game-specs">Windows, Xbox, Playstation | 72GB</p>
+                <p class="part-price">$9</p>
+              </div>
+            </div>
+            <div class="button-container">
+              <button class="add-to-cart" data-id="game1" data-name="Out of Laws" data-price="1.99">Add to Cart</button>
+              <button class="buy-now" data-id="game1" data-name="Out of Laws" data-price="1.99">Buy Now</button>
+          </div>
+          </div>
+        </div>
+
+        <!-- Game 4 -->
+        <div class="game-card part-card" id="game16">
+          <img src="./image/games/gameportrait3.jpeg" alt="Call of Duty: Black Ops" class="game-card-image">
+          <div class="game-card-overlay">
+            <div class="game-details-container">
+              <div class="game-details">
+                <h3 class="part-name">Call of Duty: Black Ops</h3>
+                <p class="game-specs">Windows, Xbox, Playstation | 10GB</p>
+                <p class="part-price">$0.99</p>
+              </div>
+            </div>
+            <div class="button-container">
+              <button class="add-to-cart" data-id="game1" data-name="Out of Laws" data-price="1.99">Add to Cart</button>
+              <button class="buy-now" data-id="game1" data-name="Out of Laws" data-price="1.99">Buy Now</button>
+          </div>
+          </div>
+        </div>
+
+        <!-- Game 5 -->
+        <div class="game-card part-card" id="game17">
+          <img src="./image/games/gameportrait4.webp" alt="COD Black Ops II" class="game-card-image">
+          <div class="game-card-overlay">
+            <div class="game-details-container">
+              <div class="game-details">
+                <h3 class="part-name">COD Black Ops II</h3>
+                <p class="game-specs">Windows, Xbox, Playstation | 10GB</p>
+                <p class="part-price">$4.95</p>
+              </div>
+            </div>
+            <div class="button-container">
+              <button class="add-to-cart" data-id="game1" data-name="Out of Laws" data-price="1.99">Add to Cart</button>
+              <button class="buy-now" data-id="game1" data-name="Out of Laws" data-price="1.99">Buy Now</button>
+          </div>
+          </div>
+        </div>
+
+        <!-- Game 6 -->
+        <div class="game-card part-card" id="game18">
+          <img src="./image/games/gameportrait5.jpeg" alt="Genshin Impact" class="game-card-image">
+          <div class="game-card-overlay">
+            <div class="game-details-container">
+              <div class="game-details">
+                <h3 class="part-name">Genshin Impact</h3>
+                <p class="game-specs">Windows, Xbox, Playstation | 10GB</p>
+                <p class="part-price">$0.12</p>
+              </div>
+            </div>
+            <<div class="button-container">
+              <button class="add-to-cart" data-id="game1" data-name="Out of Laws" data-price="1.99">Add to Cart</button>
+              <button class="buy-now" data-id="game1" data-name="Out of Laws" data-price="1.99">Buy Now</button>
+          </div>
+          </div>
+        </div>
+
+        <!-- Game 7 -->
+        <div class="game-card part-card" id="game19">
+          <img src="./image/games/gameportrait6.jpeg" alt="Sniper Ghost Warrior" class="game-card-image">
+          <div class="game-card-overlay">
+            <div class="game-details-container">
+              <div class="game-details">
+                <h3 class="part-name">Sniper Ghost Warrior</h3>
+                <p class="game-specs">Windows, Xbox, Playstation | 10GB</p>
+                <p class="part-price">$25</p>
+              </div>
+            </div>
+            <div class="button-container">
+              <button class="add-to-cart" data-id="game1" data-name="Out of Laws" data-price="1.99">Add to Cart</button>
+              <button class="buy-now" data-id="game1" data-name="Out of Laws" data-price="1.99">Buy Now</button>
+          </div>
+          </div>
+        </div>
+
+        <!-- Game 8 -->
+        <div class="game-card part-card" id="game20">
+          <img src="./image/games/gameportrait7.webp" alt="Asphalt 9: Legends" class="game-card-image">
+          <div class="game-card-overlay">
+            <div class="game-details-container">
+              <div class="game-details">
+                <h3 class="part-name">Asphalt 9: Legends</h3>
+                <p class="game-specs">Mobile | 10GB</p>
+                <p class="part-price">$25</p>
+              </div>
+            </div>
+            <div class="button-container">
+              <button class="add-to-cart" data-id="game1" data-name="Out of Laws" data-price="1.99">Add to Cart</button>
+              <button class="buy-now" data-id="game1" data-name="Out of Laws" data-price="1.99">Buy Now</button>
+          </div>
+          </div>
+        </div>
+
+        <!-- Game 9 -->
+        <div class="game-card part-card" id="game21">
+          <img src="./image/games/gameportrait8.jpeg" alt="Mirror's Edge" class="game-card-image">
+          <div class="game-card-overlay">
+            <div class="game-details-container">
+              <div class="game-details">
+                <h3 class="part-name">Mirror's Edge</h3>
+                <p class="game-specs">Windows, Xbox, Playstation | 7GB</p>
+                <p class="part-price">$0.99</p>
+              </div>
+            </div>
+            <div class="button-container">
+              <button class="add-to-cart" data-id="game1" data-name="Out of Laws" data-price="1.99">Add to Cart</button>
+              <button class="buy-now" data-id="game1" data-name="Out of Laws" data-price="1.99">Buy Now</button>
+          </div>
+          </div>
+        </div>
+
+        <!-- Game 10 -->
+        <div class="game-card part-card" id="game22">
+          <img src="./image/games/gameportrait9.jpeg" alt="Mafia Definitive" class="game-card-image">
+          <div class="game-card-overlay">
+            <div class="game-details-container">
+              <div class="game-details">
+                <h3 class="part-name">Mafia Definitive</h3>
+                <p class="game-specs">Windows | 43GB</p>
+                <p class="part-price">$8</p>
+              </div>
+            </div>
+            <div class="button-container">
+              <button class="add-to-cart" data-id="game1" data-name="Out of Laws" data-price="1.99">Add to Cart</button>
+              <button class="buy-now" data-id="game1" data-name="Out of Laws" data-price="1.99">Buy Now</button>
+          </div>
+          </div>
+        </div>
+
+        <!-- Game 11 -->
+        <div class="game-card part-card" id="game23">
+          <img src="./image/games/gameportrait10.webp" alt="Pubg Lite" class="game-card-image">
+          <div class="game-card-overlay">
+            <div class="game-details-container">
+              <div class="game-details">
+                <h3 class="part-name">Pubg Lite</h3>
+                <p class="game-specs">Windows | 14GB</p>
+                <p class="part-price">$2</p>
+              </div>
+            </div>
+            <div class="button-container">
+              <button class="add-to-cart" data-id="game1" data-name="Out of Laws" data-price="1.99">Add to Cart</button>
+              <button class="buy-now" data-id="game1" data-name="Out of Laws" data-price="1.99">Buy Now</button>
+          </div>
+          </div>
+        </div>
+
+        <!-- Game 12 -->
+        <div class="game-card part-card" id="game24">
+          <img src="./image/games/gameportrait11.jpeg" alt="Pubg New State" class="game-card-image">
+          <div class="game-card-overlay">
+            <div class="game-details-container">
+              <div class="game-details">
+                <h3 class="part-name">Pubg New State</h3>
+                <p class="game-specs">Windows, Mobile | 11GB</p>
+                <p class="part-price">$2</p>
+              </div>
+            </div>
+            <div class="button-container">
+              <button class="add-to-cart" data-id="game1" data-name="Out of Laws" data-price="1.99">Add to Cart</button>
+              <button class="buy-now" data-id="game1" data-name="Out of Laws" data-price="1.99">Buy Now</button>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+</body>
+<script src="./javascripts/cart.js"></script>
+</html>

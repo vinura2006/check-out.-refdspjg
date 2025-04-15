@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Delivery Information</title>
+    <link rel="stylesheet" href="./stylesheets/checkout-styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Complete Your Purchase</h1>
+            <p>Please provide your delivery information (Step 2 of 3)</p>
+            
+            <!-- Progress indicator -->
+            <div class="progress-container">
+                <div class="progress-step completed">
+                    <div class="step-number">✓</div>
+                    <div class="step-text">Personal Info</div>
+                </div>
+                <div class="progress-line active"></div>
+                <div class="progress-step active">
+                    <div class="step-number">2</div>
+                    <div class="step-text">Delivery</div>
+                </div>
+                <div class="progress-line"></div>
+                <div class="progress-step">
+                    <div class="step-number">3</div>
+                    <div class="step-text">Payment</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="checkout-container">
+            <div class="form-section">
+                <form id="delivery-info-form">
+                    <div>
+                        <div class="section-title">
+                            <div class="section-number">2</div>
+                            <h2>Delivery Information</h2>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="address">Street Address *</label>
+                            <input type="text" id="address" name="address" required>
+                            <div class="error" id="address-error">Please enter your street address</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="city">City *</label>
+                            <input type="text" id="city" name="city" required>
+                            <div class="error" id="city-error">Please enter your city</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="zip">ZIP/Postal Code *</label>
+                            <input type="text" id="zip" name="zip" required>
+                            <div class="error" id="zip-error">Please enter a valid zip code</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="country">Country *</label>
+                            <select id="country" name="country" required>
+                                <option value="">Select a country</option>
+                                <option value="US">United States</option>
+                                <option value="CA">Canada</option>
+                                <option value="UK">United Kingdom</option>
+                                <option value="AU">Australia</option>
+                                <option value="FR">France</option>
+                                <option value="DE">Germany</option>
+                                <option value="JP">Japan</option>
+                            </select>
+                            <div class="error" id="country-error">Please select a country</div>
+                        </div>
+                    </div>
+                    
+                    <div class="navigation-buttons">
+                        <button type="button" class="button secondary" onclick="window.location.href='personal-info.html'">Back to Personal Info</button>
+                        <button type="submit" class="button">Continue to Payment</button>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="order-summary" id="order-summary">
+                <h2>Order Summary</h2>
+                
+                <div id="order-items" class="order-items">
+                    <!-- Cart items will be populated from localStorage -->
+                </div>
+                
+                <div class="item">
+                    <span>Subtotal</span>
+                    <span id="subtotal">$0.00</span>
+                </div>
+                
+                <div class="item">
+                    <span>Shipping</span>
+                    <span id="shipping">$5.99</span>
+                </div>
+                
+                <div class="item">
+                    <span>Tax (8%)</span>
+                    <span id="tax">$0.00</span>
+                </div>
+                
+                <div class="item total">
+                    <span>Total</span>
+                    <span id="total">$0.00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./javascripts/checkout-common.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Load cart data and update order summary
+            updateOrderSummary();
+            
+            // Load any saved form data
+            loadSavedFormData();
+            
+            // Handle form submission
+            document.getElementById('delivery-info-form').addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Validate form
+                if (validateDeliveryInfo()) {
+                    // Save form data to localStorage
+                    saveFormData();
+                    
+                    // Redirect to payment page
+                    window.location.href = 'payment-info.html';
+                }
+            });
+            
+            // Function to validate the form
+            function validateDeliveryInfo() {
+                let isValid = true;
+                
+                // Validate address
+                const address = document.getElementById('address');
+                if (!address.value.trim()) {
+                    document.getElementById('address-error').style.display = 'block';
+                    address.classList.add('invalid');
+                    isValid = false;
+                } else {
+                    document.getElementById('address-error').style.display = 'none';
+                    address.classList.remove('invalid');
+                }
+                
+                // Validate city
+                const city = document.getElementById('city');
+                if (!city.value.trim()) {
+                    document.getElementById('city-error').style.display = 'block';
+                    city.classList.add('invalid');
+                    isValid = false;
+                } else {
+                    document.getElementById('city-error').style.display = 'none';
+                    city.classList.remove('invalid');
+                }
+                
+                // Validate zip - allow more zip code formats
+                const zip = document.getElementById('zip');
+                if (!zip.value.trim()) {
+                    document.getElementById('zip-error').style.display = 'block';
+                    zip.classList.add('invalid');
+                    isValid = false;
+                } else {
+                    document.getElementById('zip-error').style.display = 'none';
+                    zip.classList.remove('invalid');
+                }
+                
+                // Validate country
+                const country = document.getElementById('country');
+                if (!country.value) {
+                    document.getElementById('country-error').style.display = 'block';
+                    country.classList.add('invalid');
+                    isValid = false;
+                } else {
+                    document.getElementById('country-error').style.display = 'none';
+                    country.classList.remove('invalid');
+                }
+                
+                return isValid;
+            }
+            
+            // Function to save form data
+            function saveFormData() {
+                const formData = {
+                    address: document.getElementById('address').value,
+                    city: document.getElementById('city').value,
+                    zip: document.getElementById('zip').value,
+                    country: document.getElementById('country').value
+                };
+                
+                localStorage.setItem('checkoutDeliveryInfo', JSON.stringify(formData));
+            }
+            
+            // Function to load saved form data
+            function loadSavedFormData() {
+                const savedData = JSON.parse(localStorage.getItem('checkoutDeliveryInfo'));
+                if (savedData) {
+                    document.getElementById('address').value = savedData.address || '';
+                    document.getElementById('city').value = savedData.city || '';
+                    document.getElementById('zip').value = savedData.zip || '';
+                    document.getElementById('country').value = savedData.country || '';
+                }
+            }
+        });
+    </script>
+</body>
+</html>
